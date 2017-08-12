@@ -3,7 +3,7 @@
 
 ## [Resume](https://benstokman.me/resume.pdf)
 
-Veiw my resume. Also avalabe in [markdown](https://benstokman.me/resume.md).
+Veiw my resume. Also avalabe in [markdown](https://benstokman.me/resume).
 
 ## [Contact](https://benstokman.me/contact.vcf)
 
