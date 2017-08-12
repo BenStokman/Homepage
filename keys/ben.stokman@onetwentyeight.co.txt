@@ -1,6 +1,6 @@
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: OpenPGP.js v2.5.8
-Comment: https://openpgpjs.org
+Comment: ben.stokman@onetwentyeight.co
 
 xsFNBFkTo+ABEADxqLu79n08A6tEpffNUuTZUqeWiBgg5ppkFRDgd1bx8wZ8
 fzl+mg6CQzuYFgHbL8lW3KD5J2g2H4UEFSMQCheMpJ45ZpZ8B58axvrgngyk
