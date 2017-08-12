@@ -1,5 +1,5 @@
 # Ben Stokman
-![Progile Photo](https://benstokman.me/images/profile-picture.png)
+![Profile Photo](https://benstokman.me/profile-picture.jpeg)
 
 ## [Resume](https://benstokman.me/resume.pdf)
 
