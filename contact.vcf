@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:4.0
+N:Stokman;Benji;;;
+FN:Ben Stokman
+EMAIL;type=INTERNET;type=WORK;type=pref:ben.stokman@protonmail.com
+KEY;VALUE=uri:https://benstokman.me/keys/ben.stokman@protonmail.com.txt
+TEL;type=WORK;type=VOICE;type=pref:+1 (646) 883-5182
+TOX;960237B7CD1523E19287F3AED7724E9D73D28DA68D685F62C7887076A3DBF619493C264E16B7
+URL;type=HOMEPAGE:https://benstokman.me/
+PHOTO;MEDIATYPE=image/jpeg:https://benstokman.me/profile-picture.jpeg
