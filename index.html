@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+* { margin: 0; padding: 0; }
+body { background-color: #eee; color: #555; }
+pre, img { font-family: 'Source Code Pro', monospace; width: 45ch; margin: 4em auto; padding: .5em; line-height: 0; counter-reset: line; }
+pre span, img span { display: block; line-height: 1.15rem; }
+pre span:before, img span:before { counter-increment: line; content: counter(line); display: inline-block; border-right: 1px solid #ddd; width: 3ch; padding: 0 .5em; margin-right: .5em; color: #888; text-align: right; }
+#no_1 { animation: plc 5s infinite cubic-bezier(1,0,1,0); }
+#no_2 { animation: hmi 5s infinite cubic-bezier(1,0,1,0); }
+#no_3 { animation: scada 5s infinite cubic-bezier(1,0,1,0); }
+#coil { animation: digika 5s infinite cubic-bezier(1,0,1,0); }
+@keyframes plc { 0% { background-color: #eee; } 20% { background-color: #555; } 40% { background-color: #eee; } 60% { background-color: #eee; } 80% { background-color: #555; } }
+@keyframes hmi { 0% { background-color: #eee; } 20% { background-color: #eee; } 40% { background-color: #555; } 60% { background-color: #eee; } 80% { background-color: #555; } }
+@keyframes scada { 0% { background-color: #eee; } 20% { background-color: #eee; } 40% { background-color: #eee; } 60% { background-color: #555; } 80% { background-color: #555; } }
+@keyframes digika { 0% { background-color: #eee; } 20% { background-color: #555; } 40% { background-color: #555; } 60% { background-color: #555; } 80% { background-color: #555; } }
+img {padding: 0px; margin: 0px; margin-bottom: 15px;}
+body, html {marging: 0px; padding: 0px;}
+</style>
+</head>
+<body>
+<pre>
+<img src = "https://benstokman.me/profile-picture.jpeg" /></span>
+<span style = "ftext-transform: underline;">Ben Stokman</span>
+<span><a href = "https://benstokman.me/resume.pdf">Resume:</a></span>
+<span>Veiw my resume. Also avalabe in <a href = "https://benstokman.me/resume">markdown.</a></span>
+<span></span>
+<span><a href = "https://benstokman.me/contact.vcf">Contact:</a></span>
+<span>Download my contact</span>
+<span></span>
+<span>Keys</span>
+<span><a href = "https://benstokman.me/keys">PGP Keys for my mail addresses</a></span>
+<span></span>
+<span>Contact:</span>
+<span><a href = "mailto:ben.stokman@protonmail.com">ben.stokman@protonmail.com</a></span>
+</pre>
+
+</body></html>
