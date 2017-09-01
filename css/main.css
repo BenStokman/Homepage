@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Source+Code+Pro:200,300,400,500,600,700,900');
+
+body, div, html { margin: 0; padding: 0; }
+body { background-color: #eee; color: #555; }
+pre, img { font-family: 'Source Code Pro', monospace; font-weight: 300; width: 45ch; margin: 4em auto; padding: .5em; line-height: 0; counter-reset: line; }
+pre span, img span { display: block; line-height: 1.15rem; }
+pre span:before, img span:before { counter-increment: line; content: counter(line); display: inline-block; border-right: 1px solid #ddd; width: 3ch; padding: 0 .5em; margin-right: .5em; color: #888; text-align: right; font-weight: 700;}
+#no_1 { animation: plc 5s infinite cubic-bezier(1,0,1,0); }
+#no_2 { animation: hmi 5s infinite cubic-bezier(1,0,1,0); }
+#no_3 { animation: scada 5s infinite cubic-bezier(1,0,1,0); }
+#coil { animation: digika 5s infinite cubic-bezier(1,0,1,0); }
+@keyframes plc { 0% { background-color: #eee; } 20% { background-color: #555; } 40% { background-color: #eee; } 60% { background-color: #eee; } 80% { background-color: #555; } }
+@keyframes hmi { 0% { background-color: #eee; } 20% { background-color: #eee; } 40% { background-color: #555; } 60% { background-color: #eee; } 80% { background-color: #555; } }
+@keyframes scada { 0% { background-color: #eee; } 20% { background-color: #eee; } 40% { background-color: #eee; } 60% { background-color: #555; } 80% { background-color: #555; } }
+@keyframes digika { 0% { background-color: #eee; } 20% { background-color: #555; } 40% { background-color: #555; } 60% { background-color: #555; } 80% { background-color: #555; } }
+img {padding: 0px; margin: 0px; margin-bottom: 15px;}
+body, html {marging: 0px; padding: 0px;}
+a {color: #333333; text-decoration: none;}
+pre {margin-top: 100px; min-width: 750px}
+
+.page-title {
+    font-family: 'Montserrat', Veranda, sans-serif;
+    font-weight: 700;
+    font-size:2.75em;
+    padding:0px;
+    margin:0px;
+    line-height: 1;
+}
+
+.page-subtitle {
+    font-family: 'Montserrat', Veranda, sans-serif;
+    font-weight:200;
+    font-size: 1.6em;
+    padding:0px;
+    margin:0px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.social-icons li {
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+    width : 40px;
+    height: 40px;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+.header-text {
+    margin: 0, auto;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+
+.header-text .image {
+    width: 100px;
+    height: 100px;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    margin-right: 10px;
+}
+
+.header-text .text {
+}
+
+.profile-picture {
+    padding: 0px;
+    margin: 0px;
+    width: 80px;
+    height: 80px;
+    align: left;
+    display: block;
+}
