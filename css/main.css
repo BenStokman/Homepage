@@ -3,7 +3,7 @@
 body, div, html { margin: 0; padding: 0; }
 body { background-color: #eee; color: #555; }
 pre, img { font-family: 'Source Code Pro', monospace; font-weight: 300; width: 45ch; margin: 4em auto; padding: .5em; line-height: 0; counter-reset: line; }
-pre span, img span { display: block; line-height: 1.35rem; }
+pre span, img span { display: block; line-height: 1.35rem; padding-bottom: 5px;}
 pre span:before, img span:before { counter-increment: line; content: counter(line); display: inline-block; border-right: 1px solid #ddd; width: 3ch; padding: 0 .5em; margin-right: .5em; color: #888; text-align: right; font-weight: 700;}
 #no_1 { animation: plc 5s infinite cubic-bezier(1,0,1,0); }
 #no_2 { animation: hmi 5s infinite cubic-bezier(1,0,1,0); }
@@ -15,7 +15,7 @@ pre span:before, img span:before { counter-increment: line; content: counter(lin
 @keyframes digika { 0% { background-color: #eee; } 20% { background-color: #555; } 40% { background-color: #555; } 60% { background-color: #555; } 80% { background-color: #555; } }
 img {padding: 0px; margin: 0px; margin-bottom: 15px;}
 body, html {marging: 0px; padding: 0px;}
-a {color: #333333;}
+a {color: #333333; text-decoration: underline;}
 pre {margin-top: 100px; min-width: 750px}
 
 .page-title {
