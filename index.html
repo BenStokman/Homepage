@@ -1,40 +1,61 @@
 <!DOCTYPE html>
-<style>
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
-* { margin: 0; padding: 0; }
-body { background-color: #eee; color: #555; }
-pre, img { font-family: 'Source Code Pro', monospace; width: 45ch; margin: 4em auto; padding: .5em; line-height: 0; counter-reset: line; }
-pre span, img span { display: block; line-height: 1.15rem; }
-pre span:before, img span:before { counter-increment: line; content: counter(line); display: inline-block; border-right: 1px solid #ddd; width: 3ch; padding: 0 .5em; margin-right: .5em; color: #888; text-align: right; }
-#no_1 { animation: plc 5s infinite cubic-bezier(1,0,1,0); }
-#no_2 { animation: hmi 5s infinite cubic-bezier(1,0,1,0); }
-#no_3 { animation: scada 5s infinite cubic-bezier(1,0,1,0); }
-#coil { animation: digika 5s infinite cubic-bezier(1,0,1,0); }
-@keyframes plc { 0% { background-color: #eee; } 20% { background-color: #555; } 40% { background-color: #eee; } 60% { background-color: #eee; } 80% { background-color: #555; } }
-@keyframes hmi { 0% { background-color: #eee; } 20% { background-color: #eee; } 40% { background-color: #555; } 60% { background-color: #eee; } 80% { background-color: #555; } }
-@keyframes scada { 0% { background-color: #eee; } 20% { background-color: #eee; } 40% { background-color: #eee; } 60% { background-color: #555; } 80% { background-color: #555; } }
-@keyframes digika { 0% { background-color: #eee; } 20% { background-color: #555; } 40% { background-color: #555; } 60% { background-color: #555; } 80% { background-color: #555; } }
-img {padding: 0px; margin: 0px; margin-bottom: 15px;}
-body, html {marging: 0px; padding: 0px;}
-a {color: #333333; text-decoration: none;}
-</style>
-<title>Ben Stokman</title>
-</head>
-<body>
-<pre>
-<img src = "https://benstokman.me/profile-picture.jpeg" /></span>
-<span style = "ftext-transform: underline;">Ben Stokman</span>
-<span><a href = "https://benstokman.me/resume.pdf"><u>Resume:</u></a></span>
-<span>Veiw my resume. Also avalabe in <a href = "https://benstokman.me/resume">markdown.</a></span>
-<span></span>
-<span><a href = "https://benstokman.me/contact.vcf">Contact:</a></span>
-<span>Download my contact</span>
-<span></span>
- <span><u>Keys:</u></span>
-<span><a href = "https://benstokman.me/keys">PGP Keys for my mail addresses</a></span>
-<span></span>
-<span><u>Contact:</u></span>
-<span><a href = "mailto:ben.stokman@protonmail.com">ben.stokman@protonmail.com</a></span>
-</pre>
-
-</body></html>
+<html>
+    <head>
+         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+         <link href = "https://benstokman.me/css/main.css" type = "text/css" rel = "stylesheet">
+         <title>Ben Stokman</title>
+         <meta name="title" content="Homepage">
+         <meta name="description" content="Homepage for Ben Stokman"><meta property="og:title" content="Homepage">
+         <meta property="og:url" content="https://psiloveyou.xyz/open-letter-b9738610580b">
+         <meta property="og:image" content="https://benstokman.me/profile-picture.jpeg">
+         <link rel="author" href="https://medium.com/@BenjiStokman">
+         <link rel="author" href="https://twitter.com/BenjiStokman">
+         <meta property="author" content="Ben Stokman">
+         <meta name="robots" content="index, follow">
+         <meta name="twitter:creator" content="@BenjiStokman">
+         <meta property="og:site_name" content="Ben Stokman">
+    </head>
+	<body>
+	   <pre>
+            <div class = "header-text">
+                <div class = "image">
+                    <img src = "https://benstokman.me/profile-picture.jpeg" class = "profile-picture">
+                </div>
+                <div class = "text">
+                    <h1 class = "page-title">Ben Stokman</h1>
+                    <h2 class = "page-subtitle">Video game lover and privacy advocate</h2>
+                </div>
+            </div>
+            <!--
+            <ul class = "social-icons">
+                <li>
+                <a href="https://medium.com/@BenjiStokman" target = "_blank"><svg id="medium-icon" viewBox="0 0 64 64" width="40px" height="40px"><g class="svg-icon"><path d="M46.908,23.95c-0.006-0.005-0.011-0.01-0.018-0.014l-0.01-0.005l-9.05-4.525c-0.061-0.031-0.125-0.051-0.19-0.068c-0.082-0.021-0.165-0.034-0.249-0.034c-0.347,0-0.692,0.174-0.878,0.477l-5.21,8.467l6.538,10.625l9.095-14.779C46.966,24.046,46.952,23.985,46.908,23.95z M28.433,35.958L37,40.241L28.433,26.32V35.958zM38.287,40.884l7.052,3.526C46.256,44.869,47,44.548,47,43.693V26.726L38.287,40.884z M26.946,23.964l-8.839-4.419c-0.16-0.08-0.312-0.118-0.449-0.118c-0.387,0-0.659,0.299-0.659,0.802v19.083c0,0.511,0.374,1.116,0.831,1.344l7.785,3.892c0.2,0.1,0.39,0.147,0.561,0.147c0.484,0,0.823-0.374,0.823-1.003V24.051C27,24.014,26.979,23.98,26.946,23.964z"></path></g></svg></a>
+                </li>
+                <li>
+                <a href = "https://twitter.com/BenjiStokman" target = "_blank">
+                    <svg id="twitter-icon" viewBox="0 0 64 64" width="40px" height="40px"><g class="svg-icon"><path d="M48,22.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6 C41.7,19.8,40,19,38.2,19c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5c-5.5-0.3-10.3-2.9-13.5-6.9c-0.6,1-0.9,2.1-0.9,3.3 c0,2.3,1.2,4.3,2.9,5.5c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1 c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,2.9,10.1,2.9c12.1,0,18.7-10,18.7-18.7 c0-0.3,0-0.6,0-0.8C46,24.5,47.1,23.4,48,22.1z"/></g></svg>
+                </a>
+                </li>
+                <li>
+                 <a href = "mailto:ben.stokman@protonmail.com">
+                    <svg id="twitter-icon" viewBox="0 0 64 64" width="40px" height="40px"><g class="svg-icon"><path d="M17,22v20h30V22H17z M41.1,25L32,32.1L22.9,25H41.1z M20,39V26.6l12,9.3l12-9.3V39H20z"/></g></svg>
+                </a>
+                </li>
+            </ul>
+             -->
+            <div>
+                <span><a href="https://benstokman.me/resume.pdf"><u>Resume:</u></a></span>
+                <span>Veiw my resume. Also avalabe in <a href="https://benstokman.me/resume">markdown.</a></span>
+                <span></span>
+                <span><a href="https://benstokman.me/contact.vcf">Contact:</a></span>
+                <span>Download my contact</span>
+                <span></span>
+                 <span><u>Keys:</u></span>
+                <span><a href="https://benstokman.me/keys">PGP Keys for my mail addresses</a></span>
+                <span></span>
+                <span><u>Contact:</u></span>
+                <span><a href="mailto:ben.stokman@protonmail.com">ben.stokman@protonmail.com</a></span>
+            </div>
+        </pre>
+    </body>
+</html>
