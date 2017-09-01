@@ -16,6 +16,7 @@ pre span:before, img span:before { counter-increment: line; content: counter(lin
 img {padding: 0px; margin: 0px; margin-bottom: 15px;}
 body, html {marging: 0px; padding: 0px;}
 a {color: #333333; text-decoration: underline;}
+a h1 {text-decoration: none;)
 pre {margin-top: 100px; min-width: 750px}
 
 .page-title {
