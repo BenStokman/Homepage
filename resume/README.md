@@ -1,6 +1,8 @@
 # Resume
 
-![ben.stokman@protonmail.com](mailto:ben.stokman@protonmail.com) ([key](https://benstokman.me/keys/ben.stokman@protonmail.com.txt)) 
+![ben.stokman@protonmail.com](mailto:ben.stokman@protonmail.com) ([key](https://benstokman.me/keys/ben.stokman@protonmail.com.txt))
+
+![https://benstokman.me/resume/README.md](Download This As A Text File).
 
 ## Special Training
 
