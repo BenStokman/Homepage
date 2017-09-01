@@ -2,8 +2,6 @@
 
 ![ben.stokman@protonmail.com](mailto:ben.stokman@protonmail.com) ([key](https://benstokman.me/keys/ben.stokman@protonmail.com.txt))
 
-[Twitter](https://twitter.com/BenjiStokman) [Medium](https://medium.com/@BenjiStokman) [ :octocat:](https://github.com/BenStokman)
-
 [Download This As A Text File](https://benstokman.me/resume/README.md).
 
 ## Special Training
