@@ -22,7 +22,7 @@
 * MATHadazzles:   Mind   Stretch   Puzzles,   Volumes   6   and   7:   Reasoning   Algebraically. Contributed   and   edited   puzzles.   Published   by he PRIME Center, Arizona State University, 2017 and available through Amazon. 
 * Creator and editor of [OneTwentyEight Blog](https://blog.onetwentyeight.co) and [OneTwentyEight](https://onetwentyeight.co). A blog about video game philosophy and general technology. [Veiw Work For This publication](https://blog.onetwentyeight.co/@BenjiStokman)
 
-* Writtr in [P.S. I Love You](https://psiloveyou.xyz). [Veiw Work For This publication](https://psiloveyou.xyz/@BenjiStokman)
+* Writer in [P.S. I Love You](https://psiloveyou.xyz). A publication about love in the modern age. [Veiw Work For This publication](https://psiloveyou.xyz/@BenjiStokman)
 
 ## High School Activities
 
