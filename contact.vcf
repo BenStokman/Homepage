@@ -1,6 +1,6 @@
 BEGIN:VCARD
 VERSION:4.0
-N:Stokman;Benji;;;
+N:Stokman;Ben;;;
 FN:Ben Stokman
 EMAIL;type=INTERNET;type=WORK;type=pref:ben.stokman@protonmail.com
 KEY;VALUE=uri:https://benstokman.me/keys/ben.stokman@protonmail.com.txt
