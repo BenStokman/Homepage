@@ -56,6 +56,10 @@ div.header-text {
 	min-width: 600px;
 }
 
+h2.page-subtitle {
+	font-weight: 300;
+}
+
 /* 1.1: Navigation */
 nav.navigation {
 	padding-left: 100px;
