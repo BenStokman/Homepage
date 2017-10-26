@@ -4,6 +4,7 @@
 0: Global Elements
 - 0.0: Fonts
 - 0.1: Reset
+- 0.2: Theme Color
 1: Header
 - 1.0: Header
 - 1.1: Navigation
@@ -44,6 +45,25 @@ q {
 
 q.highlight {
 	font-family: 'Zilla Slab Highlight', cursive;
+}
+
+/* 0.2: Theme Color */
+.theme-color {
+	color: #e30b5c;
+	outline-color: #e30b5c;
+	background-color: #e30b5c;
+}
+
+.theme-color-background {
+	background-color: #e30b5c;
+}
+
+.theme-color-text {
+	color: #e30b5c;
+}
+
+.theme-color-outline {
+	background-color: #e30b5c;
 }
 
 /*------------------------------------------------------------------------------------------*/
