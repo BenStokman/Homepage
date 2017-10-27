@@ -77,7 +77,7 @@ p.no-size {
 
 /* 0.3: Sections */
 
-div.section {
+.section {
 	height: 100%;
 	margin: 0px;
 	padding: 0px;
