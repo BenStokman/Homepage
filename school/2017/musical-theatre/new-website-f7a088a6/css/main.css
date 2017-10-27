@@ -20,7 +20,7 @@
 
 /* 0.0 Fonts */
 @import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Vollkorn:400,400i,600,600i,700,700i,900,900i|Zilla+Slab+Highlight:400,700|Zilla+Slab:300,300i,400,400i,500,500i,600,600i,700,700i');
-
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css');
 
 /* 0.1 Reset */
 
@@ -48,6 +48,12 @@ q {
 
 q.highlight {
 	font-family: 'Zilla Slab Highlight', cursive;
+}
+
+p.no-size {
+	font-size: 0px;
+	margin: 0px;
+	padding: 0px;
 }
 
 /* 0.2: Theme Color */
