@@ -68,51 +68,51 @@
     {
       "name": "OneTwentyEight Blog",
       "publisher": "OneTwentyEight",
-      "releaseDate": "2014-10-01",
+      "releaseDate": "2017-04-11",
       "website": "https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
       "summary": "Innovative middle-out compression algorithm that changes the way we store data."
     },
     {
       "name": "Blog",
       "publisher": "Ben Stokman",
-      "releaseDate": "",
+      "releaseDate": "2018-02-22",
       "website": "https://medium.com/ben-stokman",
-      "summary": ""
+      "summary": "Blog about philosophy, polotics, technology, and psychology"
     },
     {
       "name": "Weekly Prompt",
       "publisher": "OneTwentyEight",
-      "releaseDate": "2017-",
-      "website": "",
-      "summary": ""
+      "releaseDate": "2017-11-06",
+      "website": "https://weeklyprompt.wtf",
+      "summary": "A publication where writers make a story based off of a weekly prompt"
     },
     {
-      "name": "Hacker",
-      "publisher": "",
-      "releaseDate": "",
-      "website": "",
-      "summary": ""
+      "name": "Hackernoon",
+      "publisher": "API",
+      "releaseDate": "2012-01-11",
+      "website": "https://hackernoon.com",
+      "summary": "how hackers start their afternoons."
     },
     {
-      "name": "P.S.",
-      "publisher": "",
-      "releaseDate": "",
-      "website": "",
-      "summary": ""
+      "name": "P.S. I Love You",
+      "publisher": "AMI",
+      "releaseDate": "2013-09-06",
+      "website": "https://psiloveyou.xyz",
+      "summary": "Writing from the heart. Stories about life, loss, and love in the digital age."
     },
     {
       "name": "Responsible",
-      "publisher": "",
-      "releaseDate": "",
-      "website": "",
-      "summary": ""
+      "publisher": "AMI",
+      "releaseDate": "2015-01-18",
+      "website": "https://responsiblebusiness.co/",
+      "summary": "how corporations, employees and customers can give back to their communities. we unite nonprofit, for profit and social purpose."
     },
     {
       "name": "Movie",
-      "publisher": "",
-      "releaseDate": "",
-      "website": "",
-      "summary": ""
+      "publisher": "AMI",
+      "releaseDate": "2013-09-13",
+      "website": "https://movietime.guru",
+      "summary": "i enjoy going to the theater by myself or with a large group of friends or with you, baby."
     }
   ],
   "skills": [
@@ -135,10 +135,12 @@
       ]
     },
     {
-      "name": "Graphic UI",
+      "name": "Graphic and UI Design",
       "level": "",
       "keywords": [
-        "Word"
+        "Graphic",
+        "UI",
+        "Design"
       ]
     }
   ],
