@@ -1,87 +1,162 @@
 {
   "basics": {
     "name": "Ben Stokman",
-    "label": "Programmer",
+    "label": "Writer",
     "picture": "https://benstokman.me/profile-picture.jpeg",
-    "email": "ben.stokman@protonmail.com.com",
+    "email": "ben.stokman@protonmail.com",
+    "phone": "",
     "website": "https://benstokman.me",
-    "summary": "A summary of John Doe...",
+    "summary": "I am a high-school sophmore who loves videogames, writing, nature, and computers.",
     "profiles": [
       {
         "network": "Twitter",
-        "username": "@BenjiStokman",
+        "username": "BenjiStokman",
         "url": "https://twitter.com/BenjiStokman"
-      }
+      },
       {
         "network": "Medium",
         "username": "@BenjiStokman",
         "url": "https://medium.com/@BenjiStokman"
+      },
+      {
+        "network": "Steam",
+        "username": "BenjiStokman",
+        "url": "https://steamcommunity.com/id/Tigerstok"
+      },
+      {
+        "network": "GitHub",
+        "username": "BenjiStokman",
+        "url": "https://github.com/BenjiStokman"
       }
     ]
   },
   "volunteer": [
     {
-    "organization": "Organization",
-    "position": "Volunteer",
-    "website": "http://organization.com/",
-    "startDate": "2012-01-01",
-    "endDate": "2013-01-01",
-    "summary": "Description...",
-    "highlights": [
-      "Awarded 'Volunteer of the Month'"
-    ]
-  }],
-  "education": [{
-    "institution": "University",
-    "area": "Software Development",
-    "studyType": "Bachelor",
-    "startDate": "2011-01-01",
-    "endDate": "2013-01-01",
-    "gpa": "4.0",
-    "courses": [
-      "DB1101 - Basic SQL"
-    ]
-  }],
-  "awards": [{
-    "title": "Award",
-    "date": "2014-11-01",
-    "awarder": "Company",
-    "summary": "There is no spoon."
-  }],
-  "publications": [{
-    "name": "Publication",
-    "publisher": "Company",
-    "releaseDate": "2014-10-01",
-    "website": "http://publication.com",
-    "summary": "Description..."
-  }],
-  "skills": [{
-    "name": "Web Development",
-    "level": "Intermediate",
-    "keywords": [
-      "HTML",
-      "CSS",
-      "Javascript"
-    ]
-  }],
+      "organization": "Iron Man",
+      "position": "Voulenter",
+      "website": "https://ironman.com/",
+      "startDate": "2015",
+      "endDate": "2016",
+      "summary": "Runner support",
+      "highlights": []
+    },
+    {
+      "organization": "Phoenix Public Library",
+      "position": "Voulenter",
+      "website": "https://ironman.com/",
+      "startDate": "2015",
+      "endDate": "Present",
+      "summary": "Shelving Books",
+      "highlights": []
+    },
+  ],
+  "education": [
+    {
+      "institution": "University of Oklahoma",
+      "area": "Information Technology",
+      "studyType": "Bachelor",
+      "startDate": "2011-06-01",
+      "endDate": "2014-01-01",
+      "gpa": "4.0",
+      "courses": [
+        "DB1101 - Basic SQL",
+        "CS2011 - Java Introduction"
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "name": "OneTwentyEight Blog",
+      "publisher": "OneTwentyEight",
+      "releaseDate": "2014-10-01",
+      "website": "https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
+      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
+    },
+    {
+      "name": "Blog",
+      "publisher": "Ben Stokman",
+      "releaseDate": "",
+      "website": "https://medium.com/ben-stokman",
+      "summary": ""
+    },
+    {
+      "name": "Weekly Prompt",
+      "publisher": "OneTwentyEight",
+      "releaseDate": "2017-",
+      "website": "",
+      "summary": ""
+    },
+    {
+      "name": "Hacker",
+      "publisher": "",
+      "releaseDate": "",
+      "website": "",
+      "summary": ""
+    },
+    {
+      "name": "P.S.",
+      "publisher": "",
+      "releaseDate": "",
+      "website": "",
+      "summary": ""
+    },
+    {
+      "name": "Responsible",
+      "publisher": "",
+      "releaseDate": "",
+      "website": "",
+      "summary": ""
+    },
+    {
+      "name": "Movie",
+      "publisher": "",
+      "releaseDate": "",
+      "website": "",
+      "summary": ""
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Proefficent",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript"
+      ]
+    },
+    {
+      "name": "Security Design",
+      "level": "Novice",
+      "keywords": [
+        "Security",
+        "Encryption",
+        "Privacy"
+      ]
+    },
+    {
+      "name": "Graphic UI",
+      "level": "",
+      "keywords": [
+        "Word"
+      ]
+    }
+  ],
   "languages": [
     {
-      "name": "English",
-      "level": "Native speaker"
-   }
+      "language": "English",
+      "fluency": "Native speaker"
+    }
   ],
   "interests": [
     {
-    "name": "Wildlife",
-    "keywords": [
-      "Ferrets",
-      "Unicorns"
-    ]
-  }
+      "name": "Wildlife",
+      "keywords": []
+    },
+    {
+      "name": "Vid",
+      "keywords": []
+    }
   ],
-  "references": [{
-    "name": "Jane Doe",
-    "reference": "Reference..."
-  }]
-
+  "references": []
 }
