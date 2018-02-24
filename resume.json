@@ -19,7 +19,8 @@
       }
     ]
   },
-  "volunteer": [{
+  "volunteer": [
+    {
     "organization": "Organization",
     "position": "Volunteer",
     "website": "http://organization.com/",
@@ -56,24 +57,28 @@
   }],
   "skills": [{
     "name": "Web Development",
-    "level": "Master",
+    "level": "Intermediate",
     "keywords": [
       "HTML",
       "CSS",
       "Javascript"
     ]
   }],
-  "languages": [{
-    "name": "English",
-    "level": "Native speaker"
-  }],
-  "interests": [{
+  "languages": [
+    {
+      "name": "English",
+      "level": "Native speaker"
+   }
+  ],
+  "interests": [
+    {
     "name": "Wildlife",
     "keywords": [
       "Ferrets",
       "Unicorns"
     ]
-  }],
+  }
+  ],
   "references": [{
     "name": "Jane Doe",
     "reference": "Reference..."
