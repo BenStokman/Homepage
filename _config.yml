@@ -1,3 +1,2 @@
-theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-redirect-from
