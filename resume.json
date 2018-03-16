@@ -1,164 +1,164 @@
 {
-  "basics": {
-    "name": "Ben Stokman",
-    "label": "Writer",
-    "picture": "https://benstokman.me/profile-picture.jpeg",
-    "email": "ben.stokman@protonmail.com",
-    "phone": "",
-    "website": "https://benstokman.me",
-    "summary": "I am a high-school sophmore who loves videogames, writing, nature, and computers.",
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "BenjiStokman",
-        "url": "https://twitter.com/BenjiStokman"
-      },
-      {
-        "network": "Medium",
-        "username": "@BenjiStokman",
-        "url": "https://medium.com/@BenjiStokman"
-      },
-      {
-        "network": "Steam",
-        "username": "BenjiStokman",
-        "url": "https://steamcommunity.com/id/Tigerstok"
-      },
-      {
-        "network": "GitHub",
-        "username": "BenjiStokman",
-        "url": "https://github.com/BenjiStokman"
-      }
-    ]
-  },
-  "volunteer": [
-    {
-      "organization": "Iron Man",
-      "position": "Voulenter",
-      "website": "https://ironman.com/",
-      "startDate": "2015",
-      "endDate": "2016",
-      "summary": "Runner support",
-      "highlights": []
-    },
-    {
-      "organization": "Phoenix Public Library",
-      "position": "Voulenter",
-      "website": "https://ironman.com/",
-      "startDate": "2015",
-      "endDate": "Present",
-      "summary": "Shelving Books",
-      "highlights": []
-    }
-  ],
-  "education": [
-    {
-      "institution": "University of Oklahoma",
-      "area": "Information Technology",
-      "studyType": "Bachelor",
-      "startDate": "2011-06-01",
-      "endDate": "2014-01-01",
-      "gpa": "4.0",
-      "courses": [
-        "DB1101 - Basic SQL",
-        "CS2011 - Java Introduction"
-      ]
-    }
-  ],
-  "publications": [
-    {
-      "name": "OneTwentyEight Blog",
-      "publisher": "OneTwentyEight",
-      "releaseDate": "2017-04-11",
-      "website": "https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
-      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
-    },
-    {
-      "name": "Blog",
-      "publisher": "Ben Stokman",
-      "releaseDate": "2018-02-22",
-      "website": "https://medium.com/ben-stokman",
-      "summary": "Blog about philosophy, polotics, technology, and psychology"
-    },
-    {
-      "name": "Weekly Prompt",
-      "publisher": "OneTwentyEight",
-      "releaseDate": "2017-11-06",
-      "website": "https://weeklyprompt.wtf",
-      "summary": "A publication where writers make a story based off of a weekly prompt"
-    },
-    {
-      "name": "Hackernoon",
-      "publisher": "API",
-      "releaseDate": "2012-01-11",
-      "website": "https://hackernoon.com",
-      "summary": "how hackers start their afternoons."
-    },
-    {
-      "name": "P.S. I Love You",
-      "publisher": "AMI",
-      "releaseDate": "2013-09-06",
-      "website": "https://psiloveyou.xyz",
-      "summary": "Writing from the heart. Stories about life, loss, and love in the digital age."
-    },
-    {
-      "name": "Responsible",
-      "publisher": "AMI",
-      "releaseDate": "2015-01-18",
-      "website": "https://responsiblebusiness.co/",
-      "summary": "how corporations, employees and customers can give back to their communities. we unite nonprofit, for profit and social purpose."
-    },
-    {
-      "name": "Movie",
-      "publisher": "AMI",
-      "releaseDate": "2013-09-13",
-      "website": "https://movietime.guru",
-      "summary": "i enjoy going to the theater by myself or with a large group of friends or with you, baby."
-    }
-  ],
-  "skills": [
-    {
-      "name": "Web Development",
-      "level": "Proefficent",
-      "keywords": [
-        "HTML",
-        "CSS",
-        "Javascript"
-      ]
-    },
-    {
-      "name": "Security Design",
-      "level": "Novice",
-      "keywords": [
-        "Security",
-        "Encryption",
-        "Privacy"
-      ]
-    },
-    {
-      "name": "Graphic and UI Design",
-      "level": "",
-      "keywords": [
-        "Graphic",
-        "UI",
-        "Design"
-      ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Native speaker"
-    }
-  ],
-  "interests": [
-    {
-      "name": "Wildlife",
-      "keywords": []
-    },
-    {
-      "name": "Vid",
-      "keywords": []
-    }
-  ],
-  "references": []
+	"basics": {
+		"name": "Ben Stokman",
+		"label": "Writer",
+		"picture": "https://benstokman.me/profile-picture.jpeg",
+		"email": "ben.stokman@protonmail.com",
+		"phone": "",
+		"website": "https://benstokman.me",
+		"summary": "I am a high-school sophmore who loves videogames, writing, nature, and computers.",
+		"profiles": [
+			{
+				"network": "Twitter",
+				"username": "BenjiStokman",
+				"url": "https://twitter.com/BenjiStokman"
+			},
+			{
+				"network": "Medium",
+				"username": "@BenjiStokman",
+				"url": "https://medium.com/@BenjiStokman"
+			},
+			{
+				"network": "Steam",
+				"username": "BenjiStokman",
+				"url": "https://steamcommunity.com/id/Tigerstok"
+			},
+			{
+				"network": "GitHub",
+				"username": "BenjiStokman",
+				"url": "https://github.com/BenjiStokman"
+			}
+		]
+	},
+	"volunteer": [
+		{
+			"organization": "Iron Man",
+			"position": "Voulenter",
+			"website": "https://ironman.com/",
+			"startDate": "2015",
+			"endDate": "2016",
+			"summary": "Runner support",
+			"highlights": []
+		},
+		{
+			"organization": "Phoenix Public Library",
+			"position": "Voulenter",
+			"website": "https://ironman.com/",
+			"startDate": "2015",
+			"endDate": "Present",
+			"summary": "Shelving Books",
+			"highlights": []
+		}
+	],
+	"education": [
+		{
+			"institution": "University of Oklahoma",
+			"area": "Information Technology",
+			"studyType": "Bachelor",
+			"startDate": "2011-06-01",
+			"endDate": "2014-01-01",
+			"gpa": "4.0",
+			"courses": [
+				"DB1101 - Basic SQL",
+				"CS2011 - Java Introduction"
+			]
+		}
+	],
+	"publications": [
+		{
+			"name": "OneTwentyEight Blog",
+			"publisher": "OneTwentyEight",
+			"releaseDate": "2017-04-11",
+			"website": "https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
+			"summary": "Innovative middle-out compression algorithm that changes the way we store data."
+		},
+		{
+			"name": "Blog",
+			"publisher": "Ben Stokman",
+			"releaseDate": "2018-02-22",
+			"website": "https://medium.com/ben-stokman",
+			"summary": "Blog about philosophy, polotics, technology, and psychology"
+		},
+		{
+			"name": "Weekly Prompt",
+			"publisher": "OneTwentyEight",
+			"releaseDate": "2017-11-06",
+			"website": "https://weeklyprompt.wtf",
+			"summary": "A publication where writers make a story based off of a weekly prompt"
+		},
+		{
+			"name": "Hackernoon",
+			"publisher": "API",
+			"releaseDate": "2012-01-11",
+			"website": "https://hackernoon.com",
+			"summary": "how hackers start their afternoons."
+		},
+		{
+			"name": "P.S. I Love You",
+			"publisher": "AMI",
+			"releaseDate": "2013-09-06",
+			"website": "https://psiloveyou.xyz",
+			"summary": "Writing from the heart. Stories about life, loss, and love in the digital age."
+		},
+		{
+			"name": "Responsible",
+			"publisher": "AMI",
+			"releaseDate": "2015-01-18",
+			"website": "https://responsiblebusiness.co/",
+			"summary": "how corporations, employees and customers can give back to their communities. we unite nonprofit, for profit and social purpose."
+		},
+		{
+			"name": "Movie",
+			"publisher": "AMI",
+			"releaseDate": "2013-09-13",
+			"website": "https://movietime.guru",
+			"summary": "i enjoy going to the theater by myself or with a large group of friends or with you, baby."
+		}
+	],
+	"skills": [
+		{
+			"name": "Web Development",
+			"level": "Proefficent",
+			"keywords": [
+				"HTML",
+				"CSS",
+				"Javascript"
+			]
+		},
+		{
+			"name": "Security Design",
+			"level": "Novice",
+			"keywords": [
+				"Security",
+				"Encryption",
+				"Privacy"
+			]
+		},
+		{
+			"name": "Graphic and UI Design",
+			"level": "",
+			"keywords": [
+				"Graphic",
+				"UI",
+				"Design"
+			]
+		}
+	],
+	"languages": [
+		{
+			"language": "English",
+			"fluency": "Native speaker"
+		}
+	],
+	"interests": [
+		{
+			"name": "Wildlife",
+			"keywords": []
+		},
+		{
+			"name": "Vid",
+			"keywords": []
+		}
+	],
+	"references": []
 }
