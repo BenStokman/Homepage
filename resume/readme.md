@@ -17,12 +17,12 @@ Also avalable in [PDF](https://benstokman.me/resume.pdf) or as a [universal JSON
   * Game Design for iPhone & iPad, June 10 - 14, 2013
 
 ## Publications
-* Creator and head editor of OneTwentyEight blog. [blog.onetwentyeight.co​](https://​blog.onetwentyeight.co), a blog about video game philosophy and general technology.
-* Creator and head editor of Weekly Prompt. [medium.com/weekly-prompt​](https://​medium.com/weeklyprompt), apublication that contains magnificent articles discussed as stories.
-* Creator and editor of my blog. [medium.com/ben-stokman​](https://​medium.com/ben-stokman), a blog about philosophy, politics, and psychology.
+* Creator and head editor of OneTwentyEight blog. [blog.onetwentyeight.co](https://blog.onetwentyeight.co), a blog about video game philosophy and general technology.
+* Creator and head editor of Weekly Prompt. [medium.com/weekly-prompt](https://medium.com/weeklyprompt), apublication that contains magnificent articles discussed as stories.
+* Creator and editor of my blog. [medium.com/ben-stokman](https://medium.com/ben-stokman), a blog about philosophy, politics, and psychology.
 * MATHadazzles: Mind Stretch Puzzles, Volumes 6 and 7: Reasoning Algebraically.
   * Contributed and edited puzzles. Published by the PRIME Center, Arizona State University, 2017 and available through Amazon
-* Writer in many other Medium publications: [​P.S. I Love You](https://psiloveyou.xyz)​, ​[Hackernoon]​(https://hackernoon.com), [Responsible BHigh School Activities
+* Writer in many other Medium publications: [P.S. I Love You](https://psiloveyou.xyz), [Hackernoon](https://hackernoon.com), [Responsible Businesses](https://responsiblebusinesses.co), and [Movie Time Guru](https://movietime.guru).
 
 ## High School Activities
 * Musical Theater, 2015-2018
