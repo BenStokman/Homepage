@@ -1,16 +1,16 @@
-# Ben Stokman Temporary Homepage
+# Ben Stokman
 ![Profile Photo](https://benstokman.me/profile-picture.jpeg)
 
-I am currently working on my homepage, for now I have a simple markdown page
+## My homepage.
 
-## Resume
+## [Resume](https://benstokman.me/resume.pdf)
 
-My resume, avalable [here](resume.pdf)
+Veiw my resume. Also avalabe in [markdown](https://benstokman.me/resume).
 
-## Keys
+## [Contact](https://benstokman.me/contact.vcf)
 
-My PGP, SSL, and signing public keye, avalable [here](keys)
+Download my contact
 
-## Articles
+## [Keys](https://benstokman.me/keys)
 
-Articles that I am very proud of, avalable [here](articles)
+PGP Keys for my mail addresses
