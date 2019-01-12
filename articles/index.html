@@ -1,77 +1,413 @@
-<html>
-    <head>
-        <base target="_blank">
-        <link href = "https://benstokman.me/css/main.css" type = "text/css" rel = "stylesheet">
-        <title>Articles - Ben Stokman</title>
-        <meta name="title" content="Homepage">
-        <meta name="description" content="Homepage for Ben Stokman">
-        <meta property="og:title" content="Homepage">
-        <meta property="og:image" content="profile-picture.jpeg">
-        <link rel="author" href = "https://medium.com/@BenjiStokman">
-        <link rel="author" href = "https://twitter.com/BenjiStokman">
-        <meta property="author" content="Ben Stokman">
-        <meta name="robots" content="index, follow">
-        <meta name="twitter:creator" content="@BenjiStokman">
-        <meta property="og:site_name" content="Ben Stokman">
-    </head>
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<!-- title -->
+		<title>Articles - Ben Stokman</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+		<!-- description -->
+		<meta name="description" content="My homepage">
+		<!-- keywords -->
+		<meta name="keywords" content="ben stokman, stokman, ben, benji, homepage, benjistokman, @benjistokman, keys, pgp, ssh, ssl">
+		<!-- favicon -->
+		<link rel="shortcut icon" href="../brand/favicon.png">
+		<link rel="apple-touch-icon" href="../brand/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../brand/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../brand/apple-touch-icon-114x114.png">
+		<!-- animation -->
+		<link rel="stylesheet" href="../css/animate.css" />
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<!-- et line icon --> 
+		<link rel="stylesheet" href="../css/et-line-icons.css" />
+		<!-- font-awesome icon -->
+		<link rel="stylesheet" href="../css/font-awesome.min.css" />
+		<!-- themify icon -->
+		<link rel="stylesheet" href="../css/themify-icons.css">
+		<!-- swiper carousel -->
+		<link rel="stylesheet" href="../css/swiper.min.css">
+		<!-- justified gallery -->
+		<link rel="stylesheet" href="../css/justified-gallery.min.css">
+		<!-- magnific popup -->
+		<link rel="stylesheet" href="../css/magnific-popup.css" />
+		<!-- revolution slider -->
+		<link rel="stylesheet" type="text/css" href="../revolution/css/settings.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="../revolution/css/layers.css">
+		<link rel="stylesheet" type="text/css" href="../revolution/css/navigation.css">
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="../css/bootsnav.css">
+		<!-- style -->
+		<link rel="stylesheet" href="../css/style.css" />
+		<!-- responsive css -->
+		<link rel="stylesheet" href="../css/responsive.css" />
+		<!--[if IE]>
+			<script src="../js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
 	<body>
-        <div class = "header-text">
-            <div class = "image">
-                <img src = "https://benstokman.me/profile-picture.jpeg" class = "profile-picture">
-            </div>
-            <div class = "text">
-                <h1 class = "page-title"><a href = "https://benstokman.me">Ben Stokman</a></h1>
-                <h2 class = "page-subtitle">Video game lover and privacy advocate</h2>
-                <div class="div-social-icons">
-                <ul class="social-icons">
-                    <li style = "display: inline;"><a target = "_blank" href = "https://twitter.com/BenjiStokman" class="social-icon" target = "_blank"> <i class="fa fa-twitter"></i></a></li>
-                    <li style = "display: inline;"><a target = "_blank" href = "https://medium.com/@BenjiStokman" class="social-icon"> <i class="fa fa-medium"></i></a></li>
-                    <li style = "display: inline;"i><a target = "_blank" href = "mailto:ben.stokman@protonmail.com" class="social-icon"> <i class="fa fa-envelope"></i></a></li>
-                </ul>
-        </div>
-            </div>
-            
-        </div>
-
-        
-        <pre>
-            <div>
-                <div class = "section"></div>
-                
-                <a target = "_blank" href = "https://blog.onetwentyeight.co/">
-                    <h2 class = "page-subtitle">OneTwentyEight Blog</h2>
-                </a>
-		<div class = "section"></div>
-                <a target = "_blank" href = "https://b.ontweg.cc/48013f091376">
-                    <span class = "title">Virtual Reality</span>
-                    <span>A commentary on the new trend in video games</span>
-                </a>
-                <div class = "section"></div>
-                <a target = "_blank" href = "https://b.ontweg.cc/6ae236772f4f">
-                    <span class = "title">Decentralized Video Game Crates</span>
-                    <span>How to create trustless randomness on a blockchain</span>
-                </a>
-                <div class = "section"></div>
-                <a target = "_blank" href = "https://b.ontweg.cc/131c4b936b2e">
-                    <span class = "title">Rock Paper Scisors</span>
-                    <span>Trustless random choice generation</span>
-                </a>
-                
-                
-                <div class = "section"></div>
-                <div class = "section"></div>
-                <a target = "_blank" href = "https://psiloveyou.xyz">
-                    <h2 class = "page-subtitle">P.S. I Love You</h2>
-                </a>
-		<div class = "section"></div>
-                <a target = "_blank" href = "https://psiloveyou.xyz/nostalgia-4db1db02adff">
-                    <span class = "title">Nostalgia</span>
-                </a>
-                <div class = "section"></div>
-                <a target = "_blank" href = "https://psiloveyou.xyz/open-letter-b9738610580b">
-                    <span class = "title">An Open Letter to my Future Significant Other</span>
-                </a>
-            </div>
-        </pre>
-    </body>
+		<section class="wow parallax fadeIn padding-100px-tb sm-padding-60px-tb xs-padding-30px-tb top-space"  data-stellar-background-ratio="0.5" style="background-image:url('../images/blog.jpeg');">
+			<div class="opacity-medium bg-extra-dark-gray"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12 display-table">
+						<div class="display-table-cell vertical-align-middle text-center">
+							<!-- start page title -->
+							<h1 class="text-white alt-font font-weight-700 page-title-very-large">Articles</h1>
+							<!-- end page title -->
+							<span class="display-block margin-10px-top alt-font text-extra-light-gray">A Collection of articles I am expecially proud of.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="wow fadeIn padding-20px-tb border-bottom border-color-extra-light-gray" style="visibility: visible; animation-name: fadeIn;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 display-table">
+						<div class="display-table-cell vertical-align-middle text-left">
+							<div class="breadcrumb alt-font text-small no-margin-bottom">
+								<!-- start breadcrumb -->
+								<ul>
+									<li><a href=".." class="text-medium-gray inner-link">Home</a></li>
+									<li>Articles</li>
+								</ul>
+								<!-- end breadcrumb -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- start post content section --> 
+		<section id="articles" class="wow fadeIn bg-light-gray half-section last-paragraph-no-margin blog-post-style5">
+			<!-- <div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="portfolio-filter nav nav-tabs border-none portfolio-filter-tab-1 font-weight-600 alt-font text-uppercase text-center margin-80px-bottom text-small sm-margin-40px-bottom xs-margin-20px-bottom">
+							<li class="nav active"><a href="javascript:void(0);" data-filter="*" class="xs-display-inline light-gray-text-link text-very-small">All</a></li>
+							<li class="nav"><a href="javascript:void(0);" data-filter=".filter-blog" class="xs-display-inline light-gray-text-link text-very-small">Blog</a></li>
+							<li class="nav"><a href="javascript:void(0);" data-filter=".filter-onetwentyeight" class="xs-display-inline light-gray-text-link text-very-small">oneTwentyEight</a></li>
+							<li class="nav"><a href="javascript:void(0);" data-filter=".filter-hackernoon" class="xs-display-inline light-gray-text-link text-very-small">Hackernon</a></li>
+							<li class="nav"><a href="javascript:void(0);" data-filter="filter-extranewsfeed" class="xs-display-inline light-gray-text-link text-very-small">Extranewsfeed</a></li>
+							<li class="nav"><a href="javascript:void(0);" data-filter="filter-psiloveyou" class="xs-display-inline light-gray-text-link text-very-small">P.S. I Love You</a></li>
+						</ul>
+					</div>
+				</div>
+			</div> -->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12 no-padding xs-padding-15px-lr filter-content">
+						<div class="filter-content overflow-hidden">
+							<ul class="blog-grid filter-content blog-3col gutter-large">
+								<li class="grid-sizer"></li>
+								<!-- start post item --> 
+								<li class="grid-item wow fadeInUp last-paragraph-no-margin filter-blog grid-item filter-blog">
+									<div class="blog-post">
+										<div class="blog-post-images overflow-hidden">
+											<a href="https://medium.com/p/bc6b3adc64f4">
+												<img src="../images/bc6b3adc64f4.jpeg" alt="">
+											</a>
+											<div class="blog-categories bg-white text-uppercase text-extra-small alt-font">Blog</div>
+										</div>
+										<div class="post-details padding-40px-all bg-white sm-padding-20px-all">
+											<div class="blog-hover-color"></div>
+											<a href="https://medium.com/p/bc6b3adc64f4" class="alt-font post-title text-medium text-extra-dark-gray width-90 display-block md-width-100 margin-5px-bottom">You are the Problem</a>
+											<div class="author">
+												<span class="text-medium-gray text-uppercase text-extra-small display-inline-block">14 April 2018</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<!-- end post item --> 
+								<!-- start post item --> 
+								<li class="grid-item wow fadeInUp last-paragraph-no-margin filter-blog grid-item filter-blog">
+									<div class="blog-post">
+										<div class="blog-post-images overflow-hidden">
+											<a href="https://medium.com/p/cfb2ce21024">
+												<img src="../images/cfb2ce21024.jpeg" alt="">
+											</a>
+											<div class="blog-categories bg-white text-uppercase text-extra-small alt-font">Blog</div>
+										</div>
+										<div class="post-details padding-40px-all bg-white sm-padding-20px-all">
+											<div class="blog-hover-color"></div>
+											<a href="https://medium.com/p/cfb2ce21024" class="alt-font post-title text-medium text-extra-dark-gray width-90 display-block md-width-100 margin-5px-bottom">The new Printing Press</a>
+											<div class="author">
+												<span class="text-medium-gray text-uppercase text-extra-small display-inline-block">25 March 2018</span>
+											</div>
+											<p>When the printing press was invented, many major events soon followed that would not have if the printing press were not there to assist it.</p>
+										</div>
+									</div>
+								</li>
+								<!-- end post item -->
+								<!-- start post item --> 
+								<li class="grid-item wow fadeInUp last-paragraph-no-margin filter-blog grid-item filter-blog">
+									<div class="blog-post">
+										<div class="blog-post-images overflow-hidden">
+											<a href="https://medium.com/p/a0e852c32a73">
+												<img src="../images/a0e852c32a73.jpeg" alt="">
+											</a>
+											<div class="blog-categories bg-white text-uppercase text-extra-small alt-font">Extranewsfeed</div>
+										</div>
+										<div class="post-details padding-40px-all bg-white sm-padding-20px-all">
+											<div class="blog-hover-color"></div>
+											<a href="https://medium.com/p/a0e852c32a73" class="alt-font post-title text-medium text-extra-dark-gray width-90 display-block md-width-100 margin-5px-bottom">A Freindly Reminder About the Second Amendment</a>
+											<div class="author">
+												<span class="text-medium-gray text-uppercase text-extra-small display-inline-block">3 March 2018</span>
+											</div>
+											<p>And its not for hunting</p>
+										</div>
+									</div>
+								</li>
+								<!-- end post item -->
+								<!-- start post item --> 
+								<li class="grid-item wow fadeInUp last-paragraph-no-margin filter-blog grid-item filter-blog">
+									<div class="blog-post">
+										<div class="blog-post-images overflow-hidden">
+											<a href="https://medium.com/p/951367956238">
+												<img src="../images/951367956238.jpeg" alt="">
+											</a>
+											<div class="blog-categories bg-white text-uppercase text-extra-small alt-font">Weekly Prompt</div>
+										</div>
+										<div class="post-details padding-40px-all bg-white sm-padding-20px-all">
+											<div class="blog-hover-color"></div>
+											<a href="https://medium.com/p/951367956238" class="alt-font post-title text-medium text-extra-dark-gray width-90 display-block md-width-100 margin-5px-bottom">The Meaning of Life</a>
+											<div class="author">
+												<span class="text-medium-gray text-uppercase text-extra-small display-inline-block">9 Feb 2018</span>
+											</div>
+											<p>An immortal woke up with its first gray hair.</p>
+										</div>
+									</div>
+								</li>
+								<!-- end post item -->
+								<!-- start post item --> 
+								<li class="grid-item wow fadeInUp last-paragraph-no-margin filter-blog grid-item filter-blog">
+									<div class="blog-post">
+										<div class="blog-post-images overflow-hidden">
+											<a href="https://medium.com/p/ed372e01c74a">
+												<img src="../images/ed372e01c74a.jpeg" alt="">
+											</a>
+											<div class="blog-categories bg-white text-uppercase text-extra-small alt-font">oneTwentyEight</div>
+										</div>
+										<div class="post-details padding-40px-all bg-white sm-padding-20px-all">
+											<div class="blog-hover-color"></div>
+											<a href="https://medium.com/p/ed372e01c74a" class="alt-font post-title text-medium text-extra-dark-gray width-90 display-block md-width-100 margin-5px-bottom">Memes</a>
+											<div class="author">
+												<span class="text-medium-gray text-uppercase text-extra-small display-inline-block">13 Jan 2018</span>
+											</div>
+											<p>Why Fortnite is one of the best games in existence, and why the gaming landscape is changing.</p>
+										</div>
+									</div>
+								</li>
+								<!-- end post item --> 
+								<!-- start post item --> 
+								<li class="grid-item wow fadeInUp last-paragraph-no-margin filter-blog grid-item filter-hackernoon">
+									<div class="blog-post">
+										<div class="blog-post-images overflow-hidden">
+											<a href="https://medium.com/p/48421c86c821">
+												<img src="../images/48421c86c821.jpeg" alt="">
+											</a>
+											<div class="blog-categories bg-white text-uppercase text-extra-small alt-font">Hackernoon</div>
+										</div>
+										<div class="post-details padding-40px-all bg-white sm-padding-20px-all">
+											<div class="blog-hover-color"></div>
+											<a href="https://medium.com/p/48421c86c821" class="alt-font post-title text-medium text-extra-dark-gray width-90 display-block md-width-100 margin-5px-bottom">On Bitcoin and Altcoins</a>
+											<div class="author">
+												<span class="text-medium-gray text-uppercase text-extra-small display-inline-block">9 December 2017</span>
+											</div>
+											<p>Bitcoin is useless.</p>
+										</div>
+									</div>
+								</li>
+								<!-- end post item -->
+								<!-- start post item --> 
+								<li class="grid-item wow fadeInUp last-paragraph-no-margin filter-blog grid-item filter-blog">
+									<div class="blog-post">
+										<div class="blog-post-images overflow-hidden">
+											<a href="https://medium.com/p/7c866eb17ca9">
+												<img src="../images/7c866eb17ca9.jpeg" alt="">
+											</a>
+											<div class="blog-categories bg-white text-uppercase text-extra-small alt-font">oneTwentyEight</div>
+										</div>
+										<div class="post-details padding-40px-all bg-white sm-padding-20px-all">
+											<div class="blog-hover-color"></div>
+											<a href="https://medium.com/p/7c866eb17ca9" class="alt-font post-title text-medium text-extra-dark-gray width-90 display-block md-width-100 margin-5px-bottom">The Second Bannana is Overpowered</a>
+											<div class="author">
+												<span class="text-medium-gray text-uppercase text-extra-small display-inline-block">1 Nov 2017</span>
+											</div>
+											<p>There are currently too many uses which are all very reliable</p>
+										</div>
+									</div>
+								</li>
+								<!-- end post item -->
+								<!-- start post item --> 
+								<li class="grid-item wow fadeInUp last-paragraph-no-margin filter-blog grid-item filter-blog">
+									<div class="blog-post">
+										<div class="blog-post-images overflow-hidden">
+											<a href="https://medium.com/p/5235596b7cb">
+												<img src="../images/5235596b7cb.jpeg" alt="">
+											</a>
+											<div class="blog-categories bg-white text-uppercase text-extra-small alt-font">Responsible Businuesses</div>
+										</div>
+										<div class="post-details padding-40px-all bg-white sm-padding-20px-all">
+											<div class="blog-hover-color"></div>
+											<a href="https://medium.com/p/5235596b7cb" class="alt-font post-title text-medium text-extra-dark-gray width-90 display-block md-width-100 margin-5px-bottom">Why only Regulations can Make Bisnuesses Responsible</a>
+											<div class="author">
+												<span class="text-medium-gray text-uppercase text-extra-small display-inline-block">17 Oct 2017</span>
+											</div>
+											<p>Why Fortnite is one of the best games in existence, and why the gaming landscape is changing.</p>
+										</div>
+									</div>
+								</li>
+								<!-- end post item --> 
+								<!-- start post item --> 
+								<li class="grid-item wow fadeInUp last-paragraph-no-margin filter-blog grid-item filter-hackernoon">
+									<div class="blog-post">
+										<div class="blog-post-images overflow-hidden">
+											<a href="https://medium.com/p/ba631ef62c3b">
+												<img src="../images/ba631ef62c3b.jpeg" alt="">
+											</a>
+											<div class="blog-categories bg-white text-uppercase text-extra-small alt-font">Hackernoon</div>
+										</div>
+										<div class="post-details padding-40px-all bg-white sm-padding-20px-all">
+											<div class="blog-hover-color"></div>
+											<a href="https://medium.com/p/ba631ef62c3b" class="alt-font post-title text-medium text-extra-dark-gray width-90 display-block md-width-100 margin-5px-bottom">Coding is Like Writing</a>
+											<div class="author">
+												<span class="text-medium-gray text-uppercase text-extra-small display-inline-block">15 Oct 2017</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<!-- end post item -->
+								<!-- start post item --> 
+								<li class="grid-item wow fadeInUp last-paragraph-no-margin filter-blog grid-item filter-blog">
+									<div class="blog-post">
+										<div class="blog-post-images overflow-hidden">
+											<a href="https://medium.com/p/f0c4a58018ef">
+												<img src="../images/f0c4a58018ef.jpeg" alt="">
+											</a>
+											<div class="blog-categories bg-white text-uppercase text-extra-small alt-font">Hackernoon</div>
+										</div>
+										<div class="post-details padding-40px-all bg-white sm-padding-20px-all">
+											<div class="blog-hover-color"></div>
+											<a href="https://medium.com/p/f0c4a58018ef" class="alt-font post-title text-medium text-extra-dark-gray width-90 display-block md-width-100 margin-5px-bottom">IPvPub: A Better Way For a Peer to Peer Internet</a>
+											<div class="author">
+												<span class="text-medium-gray text-uppercase text-extra-small display-inline-block">11 Sep 2017</span>
+											</div>
+											<p>To be clear, I have not programmed anything, I have only created an idea.</p>
+										</div>
+									</div>
+								</li>
+								<!-- end post item -->
+								<!-- start post item --> 
+								<li class="grid-item wow fadeInUp last-paragraph-no-margin filter-blog grid-item filter-blog">
+									<div class="blog-post">
+										<div class="blog-post-images overflow-hidden">
+											<a href="https://medium.com/p/48013f091376">
+												<img src="../images/48013f091376.jpeg" alt="">
+											</a>
+											<div class="blog-categories bg-white text-uppercase text-extra-small alt-font">oneTwentyEight</div>
+										</div>
+										<div class="post-details padding-40px-all bg-white sm-padding-20px-all">
+											<div class="blog-hover-color"></div>
+											<a href="https://medium.com/p/48013f091376" class="alt-font post-title text-medium text-extra-dark-gray width-90 display-block md-width-100 margin-5px-bottom"Virtual Reality</a>
+											<div class="author">
+												<span class="text-medium-gray text-uppercase text-extra-small display-inline-block">3 Oct 2017</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<!-- end post item --> 
+								<!-- start post item --> 
+								<li class="grid-item wow fadeInUp last-paragraph-no-margin filter-blog grid-item filter-hackernoon">
+									<div class="blog-post">
+										<div class="blog-post-images overflow-hidden">
+											<a href="https://medium.com/p/6a5278a52b9b">
+												<img src="../images/6a5278a52b9b.jpeg" alt="">
+											</a>
+											<div class="blog-categories bg-white text-uppercase text-extra-small alt-font">oneTwentyEight</div>
+										</div>
+										<div class="post-details padding-40px-all bg-white sm-padding-20px-all">
+											<div class="blog-hover-color"></div>
+											<a href="https://medium.com/p/6a5278a52b9b" class="alt-font post-title text-medium text-extra-dark-gray width-90 display-block md-width-100 margin-5px-bottom">Client Gidance System</a>
+											<div class="author">
+												<span class="text-medium-gray text-uppercase text-extra-small display-inline-block">16 July 2017</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<!-- end post item -->
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> 
+		<!-- end post content section --> 
+		<section class="extra-big-section parallax wow fadeIn" data-stellar-background-ratio="0.5" style="background-image: url('../headshot.jpeg');" id="bottom-image">
+			<div class="opacity-medium bg-extra-dark-gray"></div>        
+		</section>
+		<!-- javascript libraries -->
+		<script data-cfasync="false" src="/cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="../js/jquery.js"></script>
+		<script type="text/javascript" src="../js/modernizr.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="../js/skrollr.min.js"></script>
+		<script type="text/javascript" src="../js/smooth-scroll.js"></script>
+		<script type="text/javascript" src="../js/jquery.appear.js"></script>
+		<!-- menu navigation -->
+		<script type="text/javascript" src="../js/bootsnav.js"></script>
+		<script type="text/javascript" src="../js/jquery.nav.js"></script>
+		<!-- animation -->
+		<script type="text/javascript" src="../js/wow.min.js"></script>
+		<!-- page scroll -->
+		<script type="text/javascript" src="../js/page-scroll.js"></script>
+		<!-- swiper carousel -->
+		<script type="text/javascript" src="../js/swiper.min.js"></script>
+		<!-- counter -->
+		<script type="text/javascript" src="../js/jquery.count-to.js"></script>
+		<!-- parallax -->
+		<script type="text/javascript" src="../js/jquery.stellar.js"></script>
+		<!-- magnific popup -->
+		<script type="text/javascript" src="../js/jquery.magnific-popup.min.js"></script>
+		<!-- portfolio with shorting tab -->
+		<script type="text/javascript" src="../js/isotope.pkgd.min.js"></script>
+		<!-- images loaded -->
+		<script type="text/javascript" src="../js/imagesloaded.pkgd.min.js"></script>
+		<!-- pull menu -->
+		<script type="text/javascript" src="../js/classie.js"></script>
+		<script type="text/javascript" src="../js/hamburger-menu.js"></script>
+		<!-- counter -->
+		<script type="text/javascript" src="../js/counter.js"></script>
+		<!-- fit video -->
+		<script type="text/javascript" src="../js/jquery.fitvids.js"></script>
+		<!-- equalize -->
+		<script type="text/javascript" src="../js/equalize.min.js"></script>
+		<!-- skill bars -->
+		<script type="text/javascript" src="../js/skill.bars.jquery.js"></script> 
+		<!-- justified gallery -->
+		<script type="text/javascript" src="../js/justified-gallery.min.js"></script>
+		<!-- pie chart -->
+		<script type="text/javascript" src="../js/jquery.easypiechart.min.js"></script>
+		<!-- instagram -->
+		<script type="text/javascript" src="../js/instafeed.min.js"></script>
+		<!-- retina -->
+		<script type="text/javascript" src="../js/retina.min.js"></script>
+		<!-- revolution -->
+		<script type="text/javascript" src="../revolution/js/jquery.themepunch.tools.min.js"></script>
+		<script type="text/javascript" src="../revolution/js/jquery.themepunch.revolution.min.js"></script>
+		<!-- revolution slider extensions (load below extensions JS files only on local file systems to make the slider work! The following part can be removed on server for on demand loading) -->
+		<!--<script type="text/javascript" src="../revolution/js/extensions/revolution.extension.actions.min.js"></script>
+		<script type="text/javascript" src="../revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+		<script type="text/javascript" src="../revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+		<script type="text/javascript" src="../revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+		<script type="text/javascript" src="../revolution/js/extensions/revolution.extension.migration.min.js"></script>
+		<script type="text/javascript" src="../revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+		<script type="text/javascript" src="../revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+		<script type="text/javascript" src="../revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+		<script type="text/javascript" src="../revolution/js/extensions/revolution.extension.video.min.js"></script>-->
+		<!-- setting -->
+		<script type="text/javascript" src="../js/main.js"></script>
+		<script type="text/javascript" src="../js/header/transparent.js"></script>
+	</body>
 </html>
