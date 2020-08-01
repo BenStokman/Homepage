@@ -6,16 +6,13 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
-		<meta property="og:image" content="https://benstokman.me/profile-picture.jpeg" />
+		<meta property="og:image" content="https://benstokman.me/headshot-landscape.jpg" />
 		<!-- description -->
 		<meta name="description" content="My homepage">
 		<!-- keywords -->
 		<meta name="keywords" content="ben stokman, stokman, ben, benji, homepage, benjistokman, @benjistokman">
 		<!-- favicon -->
 		<link rel="shortcut icon" href="brand/favicon.png">
-		<link rel="apple-touch-icon" href="brand/apple-touch-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="brand/apple-touch-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="brand/apple-touch-icon-114x114.png">
 		<!-- animation -->
 		<link rel="stylesheet" href="css/animate.css" />
 		<!-- bootstrap -->
@@ -28,7 +25,7 @@
 		<link rel="stylesheet" href="css/themify-icons.css">
 		<!-- swiper carousel -->
 		<link rel="stylesheet" href="css/swiper.min.css">
-		<!-- justified gallery  -->
+		<!-- justified gallery -->
 		<link rel="stylesheet" href="css/justified-gallery.min.css">
 		<!-- magnific popup -->
 		<link rel="stylesheet" href="css/magnific-popup.css" />
@@ -44,34 +41,86 @@
 		<link rel="stylesheet" href="css/responsive.css" />
 	</head>
 	<body>
-		<section class="wow fadeIn p-0 mobile-height" style="background-image: url('images/dots.png')">
+		<header>
+			<!-- start navigation -->
+			<nav class="navbar navbar-default bootsnav navbar-fixed-top header-dark background-transparent nav-box-width black-link navbar-expand-lg menu-center">
+				<div class="container nav-header-container">
+					<div class="col-md-12">
+						<button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbar-collapse-toggle-1">
+							<span class="sr-only">toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<div class="navbar-collapse collapse" id="navbar-collapse-toggle-1">
+							<ul class="nav navbar-nav font-weight-700">
+								<li><a href="#start" title="Start" class="inner-link">Start</a></li>
+								<li><a href="#about" title="About" class="inner-link">About</a></li>
+								<li><a href="#projects" title="Projects" class="inner-link">Projects</a></li>
+								<li><a href="#posts" title="Posts" class="inner-link">Posts</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<!-- end navigation -->  
+		</header>
+		<!-- end header -->
+		<!-- start start section -->
+		<section class="wow fadeIn p-0 mobile-height" style="background-image:url('images/dots.png');" id="start">
 			<div class="container text-center one-third-screen lg-height-350px md-height-500px sm-height-auto sm-padding-40px-top sm-padding-50px-bottom">
 				<div class="row">
 					<div class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-center one-third-screen lg-height-350px md-height-500px sm-height-auto text-center wow bounceInLeft sm-height-auto sm-margin-30px-bottom">
-						<img style="border-radius:100%;" src="profile-picture.jpeg">
+						<img style="border-radius:100%;" src="profile-picture.jpg">
 					</div>
 					<div class="col-12 col-md-8 d-flex flex-column align-items-center justify-content-center one-third-screen lg-height-350px md-height-500px sm-height-auto text-center wow bounceInRight sm-height-auto">
-						<!-- start social media -->
-						<div class="col-md-3 col-xs-12 display-table text-right sm-text-center">
-							<div class="display-table-cell vertical-align-middle">
-								<div class="elements-social social-icon-style-8 display-inline-block vertical-align-middle">
-									<ul class="small-icon no-margin-bottom">
-										<li><a href="https://reddit.com/u/BenjiStokman" target="_blank"><i class="fab fa-reddit"></i></a></li>
-										<li><a href="https://twitter.com/BenjiStokman" target="_blank"><i class="fab fa-twitter"></i></a></li>
-										<li><a href="https://steamcommunity.com/id/Tigerstok" target="_blank"><i class="fab fa-steam"></i></a></li>
-										<li><a href="https://github.com/BenjiStokman" target="_blank"><i class="fab fa-github"></i></a></li>
-									</ul>
-								</div>
-							</div>
+						<div class="elements-social social-icon-style-8">
+							<ul class="medium-icon no-margin-bottom">
+								<li><a href="https://reddit.com/u/BenjiStokman" target="_blank"><i class="fab fa-reddit"></i></a></li>
+								<li><a href="https://twitter.com/BenjiStokman" target="_blank"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="https://github.com/BenjiStokman" target="_blank"><i class="fab fa-github"></i></a></li>
+								<li><a href="https://steamcommunity.com/id/Tigerstok" target="_blank"><i class="fab fa-steam"></i></a></li>
+								<li><a href="https://bandcamp.com/benjistokman" target="_blank"><i class="fab fa-bandcamp"></i></a></li>
+							</ul>
 						</div>
-						<!-- end social media -->
-						<div class="font-weight-300 alt-font title-large text-extra-dark-gray d-inline-block align-bottom mx-auto">I'm <span class="font-weight-600 text-bold-underline position-relative text-deep-pink">Ben Stokman</span></div>
-						<div class="text-medium-gray text-small text-uppercase margin-40px-top letter-spacing-2 alt-font sm-margin-10px-top">Videogame lover and privacy advocate</div>
+						<div class="font-weight-300 alt-font title-large text-extra-dark-gray">I'm <span class="font-weight-600 text-bold-underline position-relative text-deep-pink">Ben Stokman</span></div>
+						<div class="text-dark-gray text-large text-uppercase letter-spacing-2 alt-font margin-10px-top">Videogame lover and privacy advocate</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section id="down-section" class="bg-deep-pink text-white parallax" data-stellar-background-ratio="0.5" style="background-image: url('images/triangles.jpeg');">
+		<!-- end start section -->
+		<!-- start about section -->
+		<section class="wow fadeIn" id="about">
+			<div class="container"> 
+				<div class="row equalize sm-equalize-auto">
+					<div class="col-12 col-md-6 wow slideInDown sm-height-300px sm-align-center">
+						<div class="swiper-auto-fade swiper-container width-100 height-100">
+							<div class="swiper-wrapper no-margin">
+								<div class="swiper-slide cover-backgroundtext-white-2" style="background-image:url('images/gallery/0.jpg'); background-size:cover; background-position:center;"></div>
+								<div class="swiper-slide cover-backgroundtext-white-2" style="background-image:url('images/gallery/1.jpg'); background-size:cover; background-position:center;"></div>
+								<div class="swiper-slide cover-backgroundtext-white-2" style="background-image:url('images/gallery/2.jpg'); background-size:cover; background-position:center;"></div>
+								<div class="swiper-slide cover-backgroundtext-white-2" style="background-image:url('images/gallery/3.jpg'); background-size:cover; background-position:center;"></div>
+								<div class="swiper-slide cover-backgroundtext-white-2" style="background-image:url('images/gallery/4.jpg'); background-size:cover; background-position:center;"></div>
+								<div class="swiper-slide cover-backgroundtext-white-2" style="background-image:url('images/gallery/5.jpg'); background-size:cover; background-position:center;"></div>
+								<div class="swiper-slide cover-backgroundtext-white-2" style="background-image:url('images/gallery/6.jpg'); background-size:cover; background-position:center;"></div>
+								<div class="swiper-slide cover-backgroundtext-white-2" style="background-image:url('images/gallery/7.jpg'); background-size:cover; background-position:center;"></div>
+							</div>
+							<div class="swiper-pagination swiper-auto-pagination d-none"></div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 wow slideInUp" data-wow-delay="0.2s">
+						<div class="padding-twelve-lr lg-padding-15px-lr sm-padding-five-lr sm-padding-ten-top w-100">
+							<h4 class="font-weight-600 alt-font text-extra-dark-gray letter-spacing-minus-1">About me</h4>
+							<p>I've allways been defined by my love for computers and my interest in politics. I was born in Phoenix, and have lived there ever since. I like the dry weather there even with the hot summers. I am very passionite about my viewpoints. I think Linux is supurior in every way to any other OS. I think that DRM needs to be limited to strictly digital items, I belive that freedom is more important than almost anything else in government.</p>
+							<p>I like music, video games, computer building, basketball, writing, linux, and a whole bunch of other stuff.</p>
+							<a href="resume.pdf" class="btn btn-small btn-dark-gray margin-15px-top">View Resume</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="down-section" class="bg-deep-pink text-white parallax" data-stellar-background-ratio="0.5" style="background-image: url('images/triangles.jpg');">
 			<div class="opacity-medium bg-deep-pink"></div>
 			<div class="wow fadeIn container" data-wow-delay="0.2s">
 				<div class="row justify-content-center">
@@ -82,43 +131,52 @@
 				</div> 
 			</div>
 		</section>
-		<section class="wow fadeIn" style="background-image:url('images/dots.png');">
-			<div class="container"> 
-				<div class="row equalize sm-equalize-auto">
-					<div class="col-12 col-md-6 wow slideInDown sm-height-300px sm-align-center">
-						<div class="swiper-auto-fade swiper-container position-absolute width-100 height-100">
-							<div class="swiper-wrapper no-margin">
-								<div class="swiper-slide cover-backgroundtext-white-2" style="background-image:url('images/gallery/0.jpeg'); background-size:cover; background-position:center;"></div>
-								<div class="swiper-slide cover-backgroundtext-white-2" style="background-image:url('images/gallery/1.jpeg'); background-size:cover; background-position:center;"></div>
-								<div class="swiper-slide cover-backgroundtext-white-2" style="background-image:url('images/gallery/2.jpeg'); background-size:cover; background-position:center;"></div>
-								<div class="swiper-slide cover-backgroundtext-white-2" style="background-image:url('images/gallery/3.jpeg'); background-size:cover; background-position:center;"></div>
-								<div class="swiper-slide cover-backgroundtext-white-2" style="background-image:url('images/gallery/4.jpeg'); background-size:cover; background-position:center;"></div>
-								<div class="swiper-slide cover-backgroundtext-white-2" style="background-image:url('images/gallery/5.jpeg'); background-size:cover; background-position:center;"></div>
-								<div class="swiper-slide cover-backgroundtext-white-2" style="background-image:url('images/gallery/6.jpeg'); background-size:cover; background-position:center;"></div>
-								<div class="swiper-slide cover-backgroundtext-white-2" style="background-image:url('images/gallery/7.jpeg'); background-size:cover; background-position:center;"></div>
-								<div class="swiper-slide cover-backgroundtext-white-2" style="background-image:url('images/gallery/8.jpeg'); background-size:cover; background-position:center;"></div>
-								<div class="swiper-slide cover-backgroundtext-white-2" style="background-image:url('images/gallery/9.jpeg'); background-size:cover; background-position:center;"></div>
-							</div>
-							<div class="swiper-pagination swiper-auto-pagination d-none"></div>
-						</div>
+		<!-- end about section -->
+		<!-- start projects section -->
+		<section class="wow fadeIn padding-90px-top md-padding-50px-top sm-padding-30px-top" id="projects">>
+			<div class="container-fluid padding-six-lr md-padding-15px-lr">
+				<div class="row justify-content-center">
+					<div class="col-12 col-lg-8 last-paragraph-no-margin text-center wow fadeInUp ">
+						<h1 class="text-extra-dark-gray alt-font font-weight-600 margin-10px-bottom">Projects</h1>
 					</div>
-					<div class="col-12 col-md-6 wow slideInUp" data-wow-delay="0.2s">
-						<div class="padding-twelve-lr lg-padding-15px-lr sm-padding-five-lr sm-padding-ten-top w-100">
-							<h4 class="font-weight-600 alt-font text-extra-dark-gray letter-spacing-minus-1">About me</h4>
-							<p>I've allways been defined by my love for computers and my interest in politics. I was born in Phoenix, and have lived there ever since. I like the dry weather there even with the hot summers. I am very passionite about my viewpoints. I think Linux is supurior in every way to any other OS. I think that DRM needs to be limited to strictly digital items, I belive that freedom is more important than almost anything else in government.</p>
-							<p>I like music, video games, computer building, basketball, writing, and a whole bunch of other stuff.
-							<a href="about-us-modern.html" class="btn btn-small btn-dark-gray margin-15px-top">View Resume</a>
-						</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 px-3 p-md-0">
+						<ul class="portfolio-grid work-4col gutter-medium hover-option7">
+							<li class="grid-sizer"></li>
+							<!-- start portfolio item -->
+							<li class="grid-item wow fadeInUp">
+								<a href="album-covers">
+									<figure>
+										<div class="portfolio-img"><img src="images/projects/album-covers.png" alt=""/></div>
+										<figcaption>
+											<div class="portfolio-hover-main text-center last-paragraph-no-margin">
+												<div class="portfolio-hover-box align-middle">
+													<div class="portfolio-hover-content position-relative">
+														<span class="font-weight-900 text-uppercase margin-one-bottom text-extra-dark-gray text-extra-large">Album Covers</span>
+													</div>
+												</div>
+											</div>
+										</figcaption>
+									</figure>
+								</a>
+							</li>
+							<!-- end portfolio item -->
+						</ul>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section id="blog" class="bg-light-gray blog-post-style5">
+		<!-- end projects section -->
+		<!-- start posts section -->
+		<section class="bg-light-gray blog-post-style5" id="posts">
 			<div class="container-fluid padding-six-lr md-padding-15px-lr">
 				<div class="row justify-content-center">
 					<div class="col-12 col-lg-8 last-paragraph-no-margin text-center wow fadeInUp ">
 						<h1 class="text-extra-dark-gray alt-font font-weight-600 margin-10px-bottom">Latest Blog Posts & Articles</h1>
-						<a href="articles" class="btn btn-medium btn-deep-pink margin-20px-bottom">View All</a>
+						<!-- <a href="articles" class="btn btn-medium btn-deep-pink margin-20px-bottom">View All</a> -->
 					</div>
 				</div>
 				<div class="row">
@@ -130,7 +188,7 @@
 								<div class="blog-post">
 									<div class="blog-post-images overflow-hidden">
 										<a href="https://blog.onetwentyeight.co/whatever-stadia-is-going-for-d012a9116635">
-											<img src="images/blogs/whatever-stadia-is-going-for-d012a9116635.jpeg" alt="">
+											<img src="images/blogs/whatever-stadia-is-going-for-d012a9116635.jpg" alt="">
 										</a>
 										<div class="blog-categories bg-white text-uppercase text-extra-small">blog.onetwentyeight.co</div>
 									</div>
@@ -150,7 +208,7 @@
 								<div class="blog-post">
 									<div class="blog-post-images overflow-hidden">
 										<a href="https://blog.onetwentyeight.co/why-literally-everyone-who-games-should-care-about-rocket-league-dropping-linux-and-mac-support-bdd9265a010">
-											<img src="images/blogs/why-literally-everyone-who-games-should-care-about-rocket-league-dropping-linux-and-mac-support-bdd9265a010.jpeg" alt="">
+											<img src="images/blogs/why-literally-everyone-who-games-should-care-about-rocket-league-dropping-linux-and-mac-support-bdd9265a010.jpg" alt="">
 										</a>
 										<div class="blog-categories bg-white text-uppercase text-extra-small">blog.onetwentyeight.co</div>
 									</div>
@@ -170,7 +228,7 @@
 								<div class="blog-post">
 									<div class="blog-post-images overflow-hidden">
 										<a href=https://hackernoon.com/the-real-iss-jd702gek>
-											<img src="images/blogs/the-real-iss-jd702gek.jpeg" alt="">
+											<img src="images/blogs/the-real-iss-jd702gek.jpg" alt="">
 										</a>
 										<div class="blog-categories bg-white text-uppercase text-extra-small">hackernoon.com</div>
 									</div>
@@ -190,207 +248,10 @@
 				</div>
 			</div>
 		</section>
+		<!-- end posts section -->
 		<section class="bg-light-gray no-padding">
-			<img src="images/hero/0.jpeg" class="width-100 wow fadeInUp"></img>
+			<img src="images/hero/0.jpg" class="width-100 wow fadeInUp"></img>
 		</section>
-		<section class="wow fadeIn no-padding-tb">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-12 col-lg-8 last-paragraph-no-margin padding-40px-tb">
-						<h1 class="wow fadeInUp text-extra-dark-gray alt-font font-weight-600 text-center no-margin">Fake Album Covers</h1>
-					</div>
-				</div>
-				<div class="row no-gutters">
-					<div class="col-12 filter-content overflow-hidden">
-						<ul class="portfolio-grid work-3col hover-option2">
-							<li class="grid-sizer"></li><li class="grid-item">
-								<figure>
-									<div class="portfolio-img bg-deep-pink"><img src="album-covers/i-cant-even-2.png" alt=""/></div>
-									<figcaption>
-										<div class="portfolio-hover-main text-left">
-											<div class="portfolio-hover-box align-bottom">
-												<div class="portfolio-hover-content position-relative last-paragraph-no-margin">
-													<p class="text-white-2">2020 03 22</p>
-													<a class="btn btn-very-small btn-white margin-10px-bottom" href="album-covers/i-cant-even-2@2x.png">Download <i class="fas fa-arrow-down"></i></a>
-													<span class="line-height-normal text-extra-large alt-font text-white-2 text-uppercase margin-one-half-bottom d-block font-weight-600">I Can't Even</span>
-													<p class="text-white-2 text-uppercase text-small">Ben Stokman</p>
-												</div>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="grid-item">
-								<figure>
-									<div class="portfolio-img bg-deep-pink"><img src="album-covers/bad-ideas-4.png" alt=""/></div>
-									<figcaption>
-										<div class="portfolio-hover-main text-left">
-											<div class="portfolio-hover-box align-bottom">
-												<div class="portfolio-hover-content position-relative last-paragraph-no-margin">
-													<p class="text-white-2">2020 03 21</p>
-													<a class="btn btn-very-small btn-white margin-10px-bottom" href="album-covers/bad-ideas-4@2x.png">Download <i class="fas fa-arrow-down"></i></a>
-													<span class="line-height-normal text-extra-large alt-font text-white-2 text-uppercase margin-one-half-bottom d-block font-weight-600">Bad Ideas</span>
-													<p class="text-white-2 text-uppercase text-small">Tessa Violet</p>
-												</div>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="grid-item">
-								<figure>
-									<div class="portfolio-img bg-deep-pink"><img src="album-covers/bad-ideas-3.png" alt=""/></div>
-									<figcaption>
-										<div class="portfolio-hover-main text-left">
-											<div class="portfolio-hover-box align-bottom">
-												<div class="portfolio-hover-content position-relative last-paragraph-no-margin">
-													<p class="text-white-2">2020 03 20</p>
-													<a class="btn btn-very-small btn-white margin-10px-bottom" href="album-covers/bad-ideas-3@2x.png">Download <i class="fas fa-arrow-down"></i></a>
-													<span class="line-height-normal text-extra-large alt-font text-white-2 text-uppercase margin-one-half-bottom d-block font-weight-600">Bad Ideas</span>
-													<p class="text-white-2 text-uppercase text-small">Tessa Violet</p>
-												</div>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="grid-item">
-								<figure>
-									<div class="portfolio-img bg-deep-pink"><img src="album-covers/bad-ideas-2.png" alt=""/></div>
-									<figcaption>
-										<div class="portfolio-hover-main text-left">
-											<div class="portfolio-hover-box align-bottom">
-												<div class="portfolio-hover-content position-relative last-paragraph-no-margin">
-													<p class="text-white-2">2020 03 19</p>
-													<a class="btn btn-very-small btn-white margin-10px-bottom" href="album-covers/bad-ideas-2@2x.png">Download <i class="fas fa-arrow-down"></i></a>
-													<span class="line-height-normal text-extra-large alt-font text-white-2 text-uppercase margin-one-half-bottom d-block font-weight-600">Bad Ideas</span>
-													<p class="text-white-2 text-uppercase text-small">Tessa Violet</p>
-												</div>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="grid-item">
-								<figure>
-									<div class="portfolio-img bg-deep-pink"><img src="album-covers/night-out.png" alt=""/></div>
-									<figcaption>
-										<div class="portfolio-hover-main text-left">
-											<div class="portfolio-hover-box align-bottom">
-												<div class="portfolio-hover-content position-relative last-paragraph-no-margin">
-													<p class="text-white-2">2020 03 18</p>
-													<a class="btn btn-very-small btn-white margin-10px-bottom" href="album-covers/night-out@2x.png">Download <i class="fas fa-arrow-down"></i></a>
-													<span class="line-height-normal text-extra-large alt-font text-white-2 text-uppercase margin-one-half-bottom d-block font-weight-600">Night Out</span>
-													<p class="text-white-2 text-uppercase text-small">Maria Cardonix</p>
-												</div>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="grid-item">
-								<figure>
-									<div class="portfolio-img bg-deep-pink"><img src="album-covers/manhattan.png" alt=""/></div>
-									<figcaption>
-										<div class="portfolio-hover-main text-left">
-											<div class="portfolio-hover-box align-bottom">
-												<div class="portfolio-hover-content position-relative last-paragraph-no-margin">
-													<p class="text-white-2">2020 03 17</p>
-													<a class="btn btn-very-small btn-white margin-10px-bottom" href="album-covers/manhattan@2x.png">Download <i class="fas fa-arrow-down"></i></a>
-													<span class="line-height-normal text-extra-large alt-font text-white-2 text-uppercase margin-one-half-bottom d-block font-weight-600">Manhattan</span>
-													<p class="text-white-2 text-uppercase text-small">u/wanderbishop</p>
-												</div>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="grid-item">
-								<figure>
-									<div class="portfolio-img bg-deep-pink"><img src="album-covers/this-is-a-real-stock-photo.png" alt=""/></div>
-									<figcaption>
-										<div class="portfolio-hover-main text-left">
-											<div class="portfolio-hover-box align-bottom">
-												<div class="portfolio-hover-content position-relative last-paragraph-no-margin">
-													<p class="text-white-2">2020 03 16</p>
-													<a class="btn btn-very-small btn-white margin-10px-bottom" href="album-covers/this-is-a-real-stock-photo@2x.png">Download <i class="fas fa-arrow-down"></i></a>
-													<span class="line-height-normal text-extra-large alt-font text-white-2 text-uppercase margin-one-half-bottom d-block font-weight-600">This is a Real Stock Photo</span>
-													<p class="text-white-2 text-uppercase text-small">Ben Stokman</p>
-												</div>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="grid-item">
-								<figure>
-									<div class="portfolio-img bg-deep-pink"><img src="album-covers/here-we-go-again.png" alt=""/></div>
-									<figcaption>
-										<div class="portfolio-hover-main text-left">
-											<div class="portfolio-hover-box align-bottom">
-												<div class="portfolio-hover-content position-relative last-paragraph-no-margin">
-													<p class="text-white-2">2020 03 15</p>
-													<a class="btn btn-very-small btn-white margin-10px-bottom" href="album-covers/here-we-go-again@2x.png">Download <i class="fas fa-arrow-down"></i></a>
-													<span class="line-height-normal text-extra-large alt-font text-white-2 text-uppercase margin-one-half-bottom d-block font-weight-600">Here We Go Again</span>
-													<p class="text-white-2 text-uppercase text-small">Mari</p>
-												</div>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<li class="grid-item">
-								<figure>
-									<div class="portfolio-img bg-deep-pink"><img src="album-covers/after-hours.png" alt=""/></div>
-									<figcaption>
-										<div class="portfolio-hover-main text-left">
-											<div class="portfolio-hover-box align-bottom">
-												<div class="portfolio-hover-content position-relative last-paragraph-no-margin">
-													<p class="text-white-2">2020 03 14</p>
-													<a class="btn btn-very-small btn-white margin-10px-bottom" href="album-covers/after-hours@2x.png">Download <i class="fas fa-arrow-down"></i></a>
-													<span class="line-height-normal text-extra-large alt-font text-white-2 text-uppercase margin-one-half-bottom d-block font-weight-600">After Hours</span>
-													<p class="text-white-2 text-uppercase text-small">The Weeknd</p>
-												</div>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="row justify-content-center padding-30px-tb">
-					<div class="col-12 col-lg-8 last-paragraph-no-margin text-center">
-						<a href="album-covers" class="btn btn-medium btn-transparent-deep-pink">See All <i class="fas fa-arrow-right"></i></a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<footer class="text-white bg-deep-pink padding-50px-tb xs-padding-30px-tb">
-			<div class="container">
-				<div class="row equalize xs-equalize-auto">
-					<!-- start copyright -->
-					<div class="col-md-9 col-xs-12 xs-text-center text-small display-table xs-margin-10px-bottom">
-						<div class="display-table-cell vertical-align-middle text-medium font-weight-300">Obligatory footer to make the website look better.</div>
-					</div>
-					<!-- end copyright -->
-					<!-- start social media -->
-					<div class="col-md-3 col-xs-12 display-table text-right sm-text-center">
-						<div class="display-table-cell vertical-align-middle">
-							<div class="elements-social social-icon-style-9 display-inline-block vertical-align-middle">
-								<ul class="small-icon no-margin-bottom">
-									<li><a href="https://reddit.com/u/BenjiStokman" target="_blank"><i class="fab fa-reddit"></i></a></li>
-									<li><a href="https://twitter.com/BenjiStokman" target="_blank"><i class="fab fa-twitter"></i></a></li>
-									<li><a href="https://steamcommunity.com/id/Tigerstok" target="_blank"><i class="fab fa-steam"></i></a></li>
-									<li><a href="https://github.com/BenjiStokman" target="_blank"><i class="fab fa-github"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<!-- end social media -->
-				</div>
-			</div>
-		</footer>
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/modernizr.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -420,15 +281,15 @@
 		<!-- pull menu -->
 		<script type="text/javascript" src="js/classie.js"></script>
 		<script type="text/javascript" src="js/hamburger-menu.js"></script>
-		<!-- counter  -->
+		<!-- counter -->
 		<script type="text/javascript" src="js/counter.js"></script>
-		<!-- fit video  -->
+		<!-- fit video -->
 		<script type="text/javascript" src="js/jquery.fitvids.js"></script>
 		<!-- equalize -->
 		<script type="text/javascript" src="js/equalize.min.js"></script>
-		<!-- skill bars  -->
+		<!-- skill bars -->
 		<script type="text/javascript" src="js/skill.bars.jquery.js"></script> 
-		<!-- justified gallery  -->
+		<!-- justified gallery -->
 		<script type="text/javascript" src="js/justified-gallery.min.js"></script>
 		<!--pie chart-->
 		<script type="text/javascript" src="js/jquery.easypiechart.min.js"></script>
