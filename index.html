@@ -17,7 +17,7 @@
 		<link rel="stylesheet" href="css/animate.css" />
 		<!-- bootstrap -->
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
-		<!-- et line icon --> 
+		<!-- et line icon -->
 		<link rel="stylesheet" href="css/et-line-icons.css" />
 		<!-- font-awesome icon -->
 		<link rel="stylesheet" href="css/font-awesome.min.css" />
@@ -41,60 +41,78 @@
 		<link rel="stylesheet" href="css/responsive.css" />
 	</head>
 	<body>
+		<!-- start header -->
 		<header>
 			<!-- start navigation -->
-			<nav class="navbar navbar-default bootsnav navbar-fixed-top header-dark background-transparent nav-box-width black-link navbar-expand-lg menu-center">
-				<div class="container nav-header-container">
-					<div class="col-md-12">
+			<nav class="navbar navbar-default bootsnav navbar-fixed-top header-dark background-transparent nav-box-width white-link navbar-expand-lg menu-center">
+				<div class="container-fluid nav-header-container wow fadeInDown">
+					<!-- start content offset -->
+					<div class="col-auto col-lg-2 pl-0">
+					</div>
+					<!-- end content offset -->
+					<div class="col accordion-menu pr-0 pr-md-3">
 						<button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbar-collapse-toggle-1">
 							<span class="sr-only">toggle navigation</span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<div class="navbar-collapse collapse" id="navbar-collapse-toggle-1">
+						<div class="navbar-collapse collapse justify-content-center" id="navbar-collapse-toggle-1">
 							<ul class="nav navbar-nav font-weight-700">
+							<li class="dropdown simple-dropdown"><a href="#">Pages</a><i class="fas fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+									<!-- start sub menu -->
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="album-covers">Album Covers</a>
+										</li>
+									</ul>
+								</li>
 								<li><a href="#start" title="Start" class="inner-link">Start</a></li>
 								<li><a href="#about" title="About" class="inner-link">About</a></li>
+								<li><a href="#privacy" title="Privacy" class="inner-link">Privacy</a></li>
 								<li><a href="#projects" title="Projects" class="inner-link">Projects</a></li>
 								<li><a href="#posts" title="Posts" class="inner-link">Posts</a></li>
 							</ul>
 						</div>
 					</div>
+					<div class="col-auto col-lg-2 pr-0 text-right">
+						<div class="header-social-icon d-none d-md-inline-block">
+						<a href="https://reddit.com/u/BenjiStokman" target="_blank"><i class="fab fa-reddit"></i></a>
+						<a href="https://twitter.com/BenjiStokman" target="_blank"><i class="fab fa-twitter"></i></a>
+						<a href="https://github.com/BenjiStokman" target="_blank"><i class="fab fa-github"></i></a>
+						<a href="https://steamcommunity.com/id/Tigerstok" target="_blank"><i class="fab fa-steam"></i></a>
+						<a href="https://bandcamp.com/benjistokman" target="_blank"><i class="fab fa-bandcamp"></i></a>
+						</div>
+					</div>
 				</div>
 			</nav>
-			<!-- end navigation -->  
+			<!-- end navigation -->
 		</header>
 		<!-- end header -->
 		<!-- start start section -->
-		<section class="wow fadeIn p-0 mobile-height" style="background-image:url('images/dots.png');" id="start">
-			<div class="container text-center one-third-screen lg-height-350px md-height-500px sm-height-auto sm-padding-40px-top sm-padding-50px-bottom">
+		<section class="p-0 parallax sm-background-image-center" data-stellar-background-ratio="0.5" style="background-image:url('images/hero/main.jpg');" id="start">
+			<div class="opacity-extra-medium bg-black"></div>
+			<div class="container-fluid padding-thirteen-lr full-screen sm-padding-15px-lr">
 				<div class="row">
-					<div class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-center one-third-screen lg-height-350px md-height-500px sm-height-auto text-center wow bounceInLeft sm-height-auto sm-margin-30px-bottom">
-						<img style="border-radius:100%;" src="profile-picture.jpg">
-					</div>
-					<div class="col-12 col-md-8 d-flex flex-column align-items-center justify-content-center one-third-screen lg-height-350px md-height-500px sm-height-auto text-center wow bounceInRight sm-height-auto">
-						<div class="elements-social social-icon-style-8">
-							<ul class="medium-icon no-margin-bottom">
-								<li><a href="https://reddit.com/u/BenjiStokman" target="_blank"><i class="fab fa-reddit"></i></a></li>
-								<li><a href="https://twitter.com/BenjiStokman" target="_blank"><i class="fab fa-twitter"></i></a></li>
-								<li><a href="https://github.com/BenjiStokman" target="_blank"><i class="fab fa-github"></i></a></li>
-								<li><a href="https://steamcommunity.com/id/Tigerstok" target="_blank"><i class="fab fa-steam"></i></a></li>
-								<li><a href="https://bandcamp.com/benjistokman" target="_blank"><i class="fab fa-bandcamp"></i></a></li>
-							</ul>
+					<div class="slider-typography">
+						<div class="slider-text-middle-main">
+							<div class="slider-text-middle">
+								<div class="col-12 text-center wow fadeInUp">
+									<h6 class="text-very-light-gray padding-ten-lr font-weight-300 margin-two-bottom md-margin-four-bottom sm-margin-15px-bottom">Videogame lover and privacy advocate</h6>
+									<div class="alt-font text-white-2 text-uppercase font-weight-700 letter-spacing-minus-3 title-extra-large margin-two-bottom width-60 mx-auto lg-width-80 md-margin-four-bottom sm-width-90 sm-margin-25px-bottom sm-letter-spacing-0">Ben Stokman</div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="font-weight-300 alt-font title-large text-extra-dark-gray">I'm <span class="font-weight-600 text-bold-underline position-relative text-deep-pink">Ben Stokman</span></div>
-						<div class="text-dark-gray text-large text-uppercase letter-spacing-2 alt-font margin-10px-top">Videogame lover and privacy advocate</div>
 					</div>
 				</div>
 			</div>
 		</section>
 		<!-- end start section -->
 		<!-- start about section -->
-		<section class="wow fadeIn" id="about">
-			<div class="container"> 
+		<section class="sm-no-padding" id="about">
+			<div class="container">
 				<div class="row equalize sm-equalize-auto">
-					<div class="col-12 col-md-6 wow slideInDown sm-height-300px sm-align-center">
+					<div class="col-12 col-md-6 wow slideInDown sm-height-300px sm-align-center margin-0px padding-0px sm-no-padding">
 						<div class="swiper-auto-fade swiper-container width-100 height-100">
 							<div class="swiper-wrapper no-margin">
 								<div class="swiper-slide cover-backgroundtext-white-2" style="background-image:url('images/gallery/0.jpg'); background-size:cover; background-position:center;"></div>
@@ -110,7 +128,7 @@
 						</div>
 					</div>
 					<div class="col-12 col-md-6 wow slideInUp" data-wow-delay="0.2s">
-						<div class="padding-twelve-lr lg-padding-15px-lr sm-padding-five-lr sm-padding-ten-top w-100">
+						<div class="padding-twelve-lr lg-padding-15px-lr sm-padding-five-lr sm-padding-five-tb w-100 text-very-large">
 							<h4 class="font-weight-600 alt-font text-extra-dark-gray letter-spacing-minus-1">About me</h4>
 							<p>I've allways been defined by my love for computers and my interest in politics. I was born in Phoenix, and have lived there ever since. I like the dry weather there even with the hot summers. I am very passionite about my viewpoints. I think Linux is supurior in every way to any other OS. I think that DRM needs to be limited to strictly digital items, I belive that freedom is more important than almost anything else in government.</p>
 							<p>I like music, video games, computer building, basketball, writing, linux, and a whole bunch of other stuff.</p>
@@ -120,7 +138,7 @@
 				</div>
 			</div>
 		</section>
-		<section id="down-section" class="bg-deep-pink text-white parallax" data-stellar-background-ratio="0.5" style="background-image: url('images/triangles.jpg');">
+		<section class="bg-deep-pink text-white parallax" data-stellar-background-ratio="0.5" style="background-image: url('images/triangles.jpg');" id="privacy">
 			<div class="opacity-medium bg-deep-pink"></div>
 			<div class="wow fadeIn container" data-wow-delay="0.2s">
 				<div class="row justify-content-center">
@@ -128,7 +146,7 @@
 						<h2 class="alt-font text-white font-weight-900 text-uppercase no-margin no-padding">Why Privacy Matters</h2>
 						<h5 class="alt-font text-white font-weight-200 no-margin padding-10px-bottom">Privacy matters not to protect those who are doing something wrong, but to protect those who could be confused as such.</h5>
 					</div>
-				</div> 
+				</div>
 			</div>
 		</section>
 		<!-- end about section -->
@@ -183,7 +201,7 @@
 					<div class="col-12 px-3 p-md-0">
 						<ul class="blog-grid blog-3col gutter-large">
 							<li class="grid-sizer"></li>
-							<!-- start post item --> 
+							<!-- start post item -->
 							<li class="grid-item wow fadeInUp last-paragraph-no-margin">
 								<div class="blog-post">
 									<div class="blog-post-images overflow-hidden">
@@ -203,7 +221,7 @@
 								</div>
 							</li>
 							<!-- end post item -->
-							<!-- start post item --> 
+							<!-- start post item -->
 							<li class="grid-item wow fadeInUp last-paragraph-no-margin" data-wow-delay="0.2s">
 								<div class="blog-post">
 									<div class="blog-post-images overflow-hidden">
@@ -223,7 +241,7 @@
 								</div>
 							</li>
 							<!-- end post item -->
-							<!-- start post item --> 
+							<!-- start post item -->
 							<li class="grid-item wow fadeInUp last-paragraph-no-margin" data-wow-delay="0.4s">
 								<div class="blog-post">
 									<div class="blog-post-images overflow-hidden">
@@ -288,7 +306,7 @@
 		<!-- equalize -->
 		<script type="text/javascript" src="js/equalize.min.js"></script>
 		<!-- skill bars -->
-		<script type="text/javascript" src="js/skill.bars.jquery.js"></script> 
+		<script type="text/javascript" src="js/skill.bars.jquery.js"></script>
 		<!-- justified gallery -->
 		<script type="text/javascript" src="js/justified-gallery.min.js"></script>
 		<!--pie chart-->
