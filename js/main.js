@@ -1950,51 +1950,146 @@ $(document).ready(function () {
      instagramfeed
      ==============================================================*/
     if ($('#instaFeed-style1').length != 0) {
-        var instaFeedStyle1 = new Instafeed({
-            target: 'instaFeed-style1',
-            get: 'user',
-            userId: 5640046896,
-            limit: '8',
-            accessToken: '5640046896.1677ed0.f7cd85767e124a9f9f8d698cb33252a0',
-            resolution: "low_resolution",
-            error: {
-                template: '<div class="col-12"><span class=text-center>No Images Found</span></div>'
+
+        var token = 'IGQVJVNWh1dnBlVkRkNzl4TjU5djIxT24yZAjNaOUxNU0tBZAklNcnlCUnF6eFBJUzFJS1dHNWdLMjRyNmFtZAzF0S05BMVFBTWZABYVVNN0Rvd19QbHNya19TODMtUC1uWXN2a0I2aVpTbWt4S0hvSEI5ZAgZDZD';
+
+        $.ajax({
+            url: 'https://graph.instagram.com/me/media?fields=id,media_type,media_url,timestamp,permalink,comments_count,like_count&access_token=' + token,
+            type: 'GET',
+            success: function( response ) {
+                
+                var num_photos = 8; // how much photos do you want to get
+
+                for( var x in response.data ) {
+                    if( x < num_photos ) {
+                        if( response.data[x]['media_type'] == 'IMAGE' ) {
+                            var link    = response.data[x]['permalink'],
+                                image   = response.data[x]['media_url'],
+                                likes   = response.data[x]['like_count'],
+                                comments= response.data[x]['comments_count'],
+                                html    = '';
+
+                            html += '<div class="col-lg-3 col-md-6 instafeed-style1">';
+                                html += '<a class="insta-link" href="' + link + '" target="_blank">';
+                                    html += '<img src="' + image + '" class="insta-image" />';
+                                     html += '<div class="insta-counts">';
+                                        if( ( likes != '' && likes != undefined ) || ( comments != '' && comments != undefined ) ) {
+                                            if( likes != '' && likes != undefined ) {
+                                                html += '<span><i class="ti-heart"></i> <span class="count-number">' + likes + '</span></span>';
+                                            }
+                                            if( comments != '' && comments != undefined ) {
+                                                html += '<span><i class="ti-comment"></i> <span class="count-number">' + comments + '</span></span>';
+                                            }
+                                        } else {
+                                            html += '<span class="mr-0"><i class="ti-instagram"></i></span>';
+                                        }
+                                    html += '</div>';
+                                html += '</a>';
+                            html += '</div>';
+
+                            $('#instaFeed-style1').append(html);
+                        }
+                    }
+                }
             },
-            template: '<div class="col-lg-3 col-md-6 instafeed-style1"><a class="insta-link" href="{{link}}" target="_blank"><img src="{{image}}" class="insta-image" /><div class="insta-counts"><span><i class="ti-heart"></i> <span class="count-number">{{likes}}</span></span><span><i class="ti-comment"></i> <span class="count-number">{{comments}}</span></span></div></a></div>'
+            error: function(data) {
+
+                var html = '<div class="col-12"><span class=text-center>No Images Found</span></div>';
+                $('#instaFeed-style1').append(html);
+            }
         });
-        instaFeedStyle1.run();
     }
 
     if ($('#instaFeed-aside').length != 0) {
-        var instaFeedAside = new Instafeed({
-            target: 'instaFeed-aside',
-            get: 'user',
-            userId: 5640046896,
-            limit: '6',
-            accessToken: '5640046896.1677ed0.f7cd85767e124a9f9f8d698cb33252a0',
-            resolution: "low_resolution",
-            error: {
-                template: '<div class="col-12"><span class=text-center>No Images Found</span></div>'
+
+        var token = 'IGQVJVNWh1dnBlVkRkNzl4TjU5djIxT24yZAjNaOUxNU0tBZAklNcnlCUnF6eFBJUzFJS1dHNWdLMjRyNmFtZAzF0S05BMVFBTWZABYVVNN0Rvd19QbHNya19TODMtUC1uWXN2a0I2aVpTbWt4S0hvSEI5ZAgZDZD'; // learn how to obtain it below
+
+        $.ajax({
+            url: 'https://graph.instagram.com/me/media?fields=id,media_type,media_url,timestamp,permalink,comments_count,like_count&access_token=' + token,
+            type: 'GET',
+            success: function( response ) {
+
+                var num_photos = 6; // how much photos do you want to get
+
+                for( var x in response.data ) {
+                    if( x < num_photos ) {
+                        if( response.data[x]['media_type'] == 'IMAGE' ) {
+                            var link    = response.data[x]['permalink'],
+                                image   = response.data[x]['media_url'],
+                                likes   = response.data[x]['like_count'],
+                                comments= response.data[x]['comments_count'],
+                                html    = '';
+
+                            html += '<li><figure>';
+                                html += '<a href="' + link + '" target="_blank">';
+                                    html += '<img src="' + image + '" class="insta-image" />';
+                                    if( likes != '' && likes != undefined ) {
+                                        html += '<span class="insta-counts">';
+                                            html += '<i class="ti-heart"></i>' + likes;
+                                        html += '</span>';
+                                    } else {
+                                        html += '<span class="insta-counts"><i class="ti-instagram"></i></span>';
+                                    }
+                                html += '</a>';
+                            html += '</figure></li>';
+
+                            $('#instaFeed-aside').append(html);
+                        }
+                    }
+                }
             },
-            template: '<li><figure><a href="{{link}}" target="_blank"><img src="{{image}}" class="insta-image" /><span class="insta-counts"><i class="ti-heart"></i>{{likes}}</span></a></figure></li>'
+            error: function(data) {
+                
+                var html = '<div class="col-12"><span class=text-center>No Images Found</span></div>';
+                $('#instaFeed-aside').append(html);
+            }
         });
-        instaFeedAside.run();
     }
 
     if ($('#instaFeed-footer').length != 0) {
-        var instaFeedFooter = new Instafeed({
-            target: 'instaFeed-footer',
-            get: 'user',
-            userId: 5640046896,
-            limit: '6',
-            accessToken: '5640046896.1677ed0.f7cd85767e124a9f9f8d698cb33252a0',
-            resolution: "low_resolution",
-            error: {
-                template: '<div class="col-12"><span class=text-center>No Images Found</span></div>'
+
+        var token = 'IGQVJVNWh1dnBlVkRkNzl4TjU5djIxT24yZAjNaOUxNU0tBZAklNcnlCUnF6eFBJUzFJS1dHNWdLMjRyNmFtZAzF0S05BMVFBTWZABYVVNN0Rvd19QbHNya19TODMtUC1uWXN2a0I2aVpTbWt4S0hvSEI5ZAgZDZD'; // learn how to obtain it below
+
+        $.ajax({
+            url: 'https://graph.instagram.com/me/media?fields=id,media_type,media_url,timestamp,permalink,comments_count,like_count&access_token=' + token,
+            type: 'GET',
+            success: function( response ) {
+
+                var num_photos = 6; // how much photos do you want to get
+
+                for( var x in response.data ) {
+                    if( x < num_photos ) {
+                        if( response.data[x]['media_type'] == 'IMAGE' ) {
+                            var link    = response.data[x]['permalink'],
+                                image   = response.data[x]['media_url'],
+                                likes   = response.data[x]['like_count'],
+                                comments= response.data[x]['comments_count'],
+                                html    = '';
+
+                            html += '<li><figure>';
+                                html += '<a href="' + link + '" target="_blank">';
+                                    html += '<img src="' + image + '" class="insta-image" />';
+                                    if( likes != '' && likes != undefined ) {
+                                        html += '<span class="insta-counts">';
+                                            html += '<i class="ti-heart"></i><span>' + likes + '</span>';
+                                        html += '</span>';
+                                    } else {
+                                        html += '<span class="insta-counts"><i class="ti-instagram"></i></span>';
+                                    }
+                                html += '</a>';
+                            html += '</figure></li>';
+
+                            $('#instaFeed-footer').append(html);
+                        }
+                    }
+                }
             },
-            template: '<li><figure><a href="{{link}}" target="_blank"><img src="{{image}}" class="insta-image" /><span class="insta-counts"><i class="ti-heart"></i><span>{{likes}}</span></span></a></figure></li>'
+            error: function(data) {
+                
+                var html = '<div class="col-12"><span class=text-center>No Images Found</span></div>';
+                $('#instaFeed-footer').append(html);
+            }
         });
-        instaFeedFooter.run();
     }
 
     /*==============================================================*/
