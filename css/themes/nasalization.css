@@ -1,0 +1,9 @@
+@import url("benjistokman.css");
+
+@import url("../../fonts/nasalization.css");
+
+ :root {
+	--color-theme: #85245d;
+	--title-font: "Nasalization", sans-serif;
+	--title-weight: 400;
+}

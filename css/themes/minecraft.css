@@ -1,0 +1,9 @@
+@import url("benjistokman.css");
+
+@import url("../../fonts/minecraft.css");
+
+ :root {
+	--color-theme: #558a2c;
+	--title-font: "Minecraft", sans-serif;
+	--title-weight: 400;
+}
