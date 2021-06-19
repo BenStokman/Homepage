@@ -28,7 +28,7 @@
 		</header>
 		
 		<!-- Title -->
-		<section class="section-large large element-light" style="background-image: url('images/background/truly-red.svg'); background-size: cover;" id="title">
+		<section class="section-large large element-light" style="background-image: url('images/background/header.svg');" id="title">
 			<div class="container-large">
 				<div class="row">
 					<h2 class="tagline">Computer geek and privacy advocate</h2>
@@ -63,7 +63,7 @@
 		</section>
 		
 		<!-- Privacy -->
-		<section class="section-large large section-dark" id="privacy">
+		<section class="section-large large section-dark" style="background-image: url('images/background/privacy.svg');" id="privacy">
 			<div class="container text-center">
 				<div class="row">
 					<h1>Privacy Matters</h1>
@@ -73,7 +73,7 @@
 		</section>
 		
 		<!-- Projects -->
-		<section class="section-white" id="projects">
+		<section class="section-dark" id="projects">
 			<div class="container-large">
 				<div class="row">
 					<h1>Projects</h1>
@@ -81,19 +81,19 @@
 			</div>
 			<div class="container-fluid">
 				<div class="row grid portfolio text-center">
-					<div class="three">
+					<div class="three section-light">
 						<a href="keycaps/saturn-60">
 							<img src="images/projects/saturn-60.png" alt="">
 							<h2 class="tagline">Saturn 60 keycaps</h2>
 						</a>
 					</div>
-					<div class="three">
+					<div class="three section-light">
 						<a href="https://github.com/benjistokman/typora-theme">
 							<img src="images/projects/typora.png" alt="">
 							<h2 class="tagline">Typora Theme</h2>
 						</a>
 					</div>
-					<div class="three">
+					<div class="three section-light">
 						<a href="album-covers">
 							<img src="images/projects/album-covers.png" alt="">
 							<h2 class="tagline">Album Covers</h2>
@@ -111,7 +111,7 @@
 				</div>
 			</div>
 			<div class="container-large">
-				<div class="row grid">
+				<div class="row grid porfolio">
 					<div class="four">
 						<a href="https://blog.onetwentyeight.co/fall-guys-can-and-should-be-better-47eda6622ff5">
 							<img src="blog/fall-guys-can-and-should-be-better-47eda6622ff5.jpg" alt="">
@@ -143,5 +143,39 @@
 		
 		<!-- Scripts -->
 		<script src="js/main.js"></script>
+		
+		<div id="hidden" style="display:none">
+		</div>
+		<script src='js/trianglify.bundle.js'></script>
+		<script>
+			//Setting up Trianglify
+			const trianglify = window.trianglify || require('trianglify')			
+			
+			//Header
+			const header = trianglify({
+				width: 400,
+				height: 400,
+				xColors: ["#E5404A", "#FC4651", "#FD603E", "#FE7A2A"],
+				colorFunction: trianglify.colorFunctions.interpolateLinear(0.2),
+			})
+			document.getElementById('hidden').appendChild(header.toSVG())
+			var headerBlob = new Blob([document.getElementById("hidden").innerHTML], { type: "image/svg+xml" });
+			document.getElementById('hidden').innerHTML = "";
+			var url = window.URL.createObjectURL(headerBlob);
+			document.getElementById('title').style.backgroundImage = "url(" + url + ")";
+			
+			//Privacy
+			const privacy = trianglify({
+				width: 400,
+				height: 400,
+				xColors: ["#080808", "#181820"],
+				colorFunction: trianglify.colorFunctions.interpolateLinear(0.2),
+			})
+			document.getElementById('hidden').appendChild(privacy.toSVG())
+			var privacyBlob = new Blob([document.getElementById("hidden").innerHTML], { type: "image/svg+xml" });
+			document.getElementById('hidden').innerHTML = "";
+			var url = window.URL.createObjectURL(privacyBlob);
+			document.getElementById('privacy').style.backgroundImage = "url(" + url + ")";
+		</script>
 	</body>
 </html>

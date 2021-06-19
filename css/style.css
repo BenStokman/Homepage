@@ -170,15 +170,18 @@ section {
 .grid {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-gap: 60px;
-}
-
-.grid.portfolio {
 	grid-gap: 30px;
 }
 
+.grid.portfolio {
+	grid-gap: 20px;
+}
+
 .grid.portfolio img {
-	margin-top: 0;
+	margin-top: calc(var(--body-size) * -1/2);
+	margin-left: calc(var(--body-size) * -1/2);
+	margin-right: calc(var(--body-size) * -1/2);
+	width: calc(100% + var(--body-size));
 }
 
 .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve {
