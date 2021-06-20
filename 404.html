@@ -37,6 +37,7 @@
 				width: 400,
 				height: 400,
 				xColors: ["#E5404A", "#FC4651", "#FD603E", "#FE7A2A"],
+				seed: window.location.pathname,
 				colorFunction: trianglify.colorFunctions.interpolateLinear(0.2),
 			})
 			document.getElementById('hidden').appendChild(header.toSVG())
