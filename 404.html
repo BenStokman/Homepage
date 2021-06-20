@@ -1,0 +1,49 @@
+<html><head>
+		<!-- Page Info -->
+		<title>Ben Stokman</title>
+		<meta name="description" content="My website">
+		<link rel="shortcut icon" href="/images/brand/favicon.png">
+		
+		<!-- CSS Sheets -->
+		<link href="/css/style.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/css/themes/benjistokman.css">
+		
+		<!-- Other Things -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<!-- Title -->
+		<section class="section-full section-dark large text-center" style="background-image: url('/images/background/header.svg');" id="title">
+			<div class="container-large">
+				<div class="row">
+					<h1>404</h1>
+					<h2 class="tagline">Page or file not found</h2>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Scripts -->
+		<script src="js/main.js"></script>
+		
+		<div id="hidden" style="display:none">
+		</div>
+		<script src='js/trianglify.bundle.js'></script>
+		<script>
+			//Setting up Trianglify
+			const trianglify = window.trianglify || require('trianglify')			
+			
+			//Header
+			const header = trianglify({
+				width: 400,
+				height: 400,
+				xColors: ["#E5404A", "#FC4651", "#FD603E", "#FE7A2A"],
+				colorFunction: trianglify.colorFunctions.interpolateLinear(0.2),
+			})
+			document.getElementById('hidden').appendChild(header.toSVG())
+			var headerBlob = new Blob([document.getElementById("hidden").innerHTML], { type: "image/svg+xml" });
+			document.getElementById('hidden').innerHTML = "";
+			var url = window.URL.createObjectURL(headerBlob);
+			document.getElementById('title').style.backgroundImage = "url(" + url + ")";
+		</script>
+	</body>
+</html>
