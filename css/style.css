@@ -13,7 +13,6 @@ Table of Contents
 1: Layout
 	1.1: Section
 	1.2: Grid
-	1.3: Elements
 2: Fonts & Text
 	2.1: Headings
 	2.2: Body Fonts
@@ -22,14 +21,11 @@ Table of Contents
 	3.1: Section Colors
 	3.2: Element Colors
 4: Buttons
-	4.1: Small Screens
 5: Code
 6: Header
 	6.1: Header Colors
 	6.2: Sticky Headers
-	6.3: Small Screens
 7: Footer
-	7.1: Small Screens
 8: Table
 9: Override
 
@@ -55,9 +51,11 @@ Table of Contents
 	--body-color: var(--color-black);
 	--title-font: "Noto Sans", sans-serif;
 	--title-weight: 900;
-	--title-size: 72px;
+	--title-size-raw: 72px;
+	--title-size: var(--title-size-raw);
 	--body-font: "Noto Sans", sans-serif;
-	--body-size: 20px;
+	--body-size-raw: 20px;
+	--body-size: var(--body-size-raw);
 	--reading-font: "Noto Serif", serif;
 	--monospace-font: "Noto Mono", monospace;
 }
@@ -89,8 +87,13 @@ iframe {
 }
 
 img {
-	width: 100%;
+	max-width: 100%;
 }
+
+h1, h2, h3, h4, h5, h6, h2.tagline, p, code, pre, a.button, img {
+	margin: calc(var(--body-size) * 1/2) 0;
+}
+
 
 /* 0.4: Font Import */
 
@@ -165,6 +168,22 @@ section {
 	}
 }
 
+@media only screen and (max-width: 54rem) {
+		section, .section-thin {
+		padding: 30px 0;
+	}
+	
+	.section-huge {
+		padding: 150px 0;
+	}
+}
+
+@media only screen and (max-width: 35rem) {
+		section, .section-thin {
+		padding: 10px 0;
+	}
+}
+
 /* 1.2: Grid */
 
 .grid {
@@ -173,20 +192,24 @@ section {
 	grid-gap: 30px;
 }
 
+.grid * h1, .grid * h2, .grid * h3, .grid * h4, .grid * h5, .grid * h6, .grid * h2.tagline, .grid * p, .grid * code, .grid * pre, .grid * a.button {
+	margin: calc(var(--body-size) * 1/2);
+}
+
 .grid.portfolio {
 	grid-gap: 20px;
 }
 
-.grid.portfolio img {
-	margin-top: calc(var(--body-size) * -1/2);
-	margin-left: calc(var(--body-size) * -1/2);
-	margin-right: calc(var(--body-size) * -1/2);
-	width: calc(100% + var(--body-size));
+.grid.no-gap {
+	grid-gap: 0px;
+}
+
+.grid img {
+	margin: 0;
 }
 
 .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve {
 	grid-column-end: span 12;
-	padding: calc(var(--body-size) * 1/2);
 }
 
 .hidden-sm {
@@ -246,21 +269,10 @@ section {
 	.ten { grid-column-end: span 12;}
 	.eleven { grid-column-end: span 12;}
 	
-	.grid {
+	.grid, .grid.portfolio {
 		grid-gap: 20px;
 	}
-
-	.grid.portfolio {
-		grid-gap: 10px;
-	}
 }
-
-/* 1.3: Elements */
-
-h1, h2, h3, h4, h5, h6, h2.tagline, p, code, pre, a.button, img {
-	margin: calc(var(--body-size) * 1/2) 0;
-}
-
 
 /*	==============================================
 	2: Fonts & Text
@@ -347,6 +359,10 @@ p .dropcap {
 	padding-left: calc(var(--body-size) * 1/3 * 5/4);
 }
 
+a:hover {
+	opacity: 0.75;
+}
+
 .portfolio a {
 	text-decoration: none;
 }
@@ -358,114 +374,15 @@ p .dropcap {
 /* 2.3: Small Screens */
 
 @media only screen and (max-width: 54rem) {
-	h1 {font-size: calc(var(--title-size) * 3/4)}
-	h2 {font-size: calc(var(--title-size) * 8/9 * 3/4);}
-	h3 {font-size: calc(var(--title-size) * 7/9 * 3/4);}
-	h4 {font-size: calc(var(--title-size) * 6/9 * 3/4);}
-	h5 {font-size: calc(var(--title-size) * 5/9 * 3/4);}
-	h6 {font-size: calc(var(--title-size) * 4/9 * 3/4);}
-	h2.tagline {font-size: calc(var(--body-size) * 3/2 * 3/4);}
-
-	.small h1, h1.small {font-size: calc(var(--title-size))}
-	.small h2, h2.small {font-size: calc(var(--title-size) * 8/9 * 2/4)}
-	.small h3, h3.small {font-size: calc(var(--title-size) * 7/9 * 2/4)}
-	.small h4, h4.small {font-size: calc(var(--title-size) * 6/9 * 2/4)}
-	.small h5, h5.small {font-size: calc(var(--title-size) * 5/9 * 2/4)}
-	.small h6, h6.small {font-size: calc(var(--title-size) * 4/9 * 2/4)}
-	.small h2.tagline, h2.tagline.small {font-size: calc(var(--body-size) * 3/2 * 2/4);}
-
-	.large h1, h1.large {font-size: calc(var(--title-size) * 4/4)}
-	.large h2, h2.large {font-size: calc(var(--title-size) * 8/9 * 4/4)}
-	.large h3, h3.large {font-size: calc(var(--title-size) * 7/9 * 4/4)}
-	.large h4, h4.large {font-size: calc(var(--title-size) * 6/9 * 4/4)}
-	.large h5, h5.large {font-size: calc(var(--title-size) * 5/9 * 4/4)}
-	.large h6, h6.large {font-size: calc(var(--title-size) * 4/9 * 4/4)}
-	.large h2.tagline, h2.tagline.large {font-size: calc(var(--body-size) * 3/2 * 4/4);}
-	
-	p {font-size: calc(var(--body-size) * 3/4 * 4/4);}
-	.small p, p.small {font-size: calc(var(--body-size) * 2 /4);}
-	.large p, p.large {font-size: var(--body-size);}
-	
-	p .dropcap {
-		font-size: calc(var(--body-size) * 4 * 3/4);
-		line-height: calc(var(--body-size) * 3 * 3/4);
-		padding-top: calc(var(--body-size) * 1/2 * 3/4);
-		padding-right: calc(var(--body-size) * 1/2 * 3/4);
-		padding-left: calc(var(--body-size) * 1/3 * 3/4);
-	}
-	.small p .dropcap, p.small .dropcap {
-		font-size: calc(var(--body-size) * 4 * 2/4);
-		line-height: calc(var(--body-size) * 3 * 2/4);
-		padding-top: calc(var(--body-size) * 1/2 * 2/4);
-		padding-right: calc(var(--body-size) * 1/2 * 2/4);
-		padding-left: calc(var(--body-size) * 1/3 * 2/4);
-	}
-	.large p .dropcap, p.large .dropcap {
-		font-size: calc(var(--body-size) * 4 * 4/4);
-		line-height: calc(var(--body-size) * 3 * 4/4);
-		padding-top: calc(var(--body-size) * 1/2 * 4/4);
-		padding-right: calc(var(--body-size) * 1/2 * 4/4);
-		padding-left: calc(var(--body-size) * 1/3 * 4/4);
-	}
-
-	.fa-icon i.fa, i.fa.fa-icon, .fa-icon i.fab, i.fab.fa-icon, .fa-icon i.far, i.far.fa-icon, .fa-icon i.fa-regular, i.fa-regular.fa-icon, .fa-icon i.fas, i.fas.fa-icon, .fa-icon i.fa-solid, i.fa-solid.fa-icon {
-		font-size: calc(var(--body-size) * 3 * 3/4);
+	:root {
+		--title-size: calc(var(--title-size-raw) * 3/4);
+		--body-size: calc(var(--body-size-raw) * 3/4);
 	}
 }
 
 @media only screen and (max-width: 25rem) {
-	h1 {font-size: calc(var(--title-size) * 2/4)}
-	h2 {font-size: calc(var(--title-size) * 8/9 * 2/4);}
-	h3 {font-size: calc(var(--title-size) * 7/9 * 2/4);}
-	h4 {font-size: calc(var(--title-size) * 6/9 * 2/4);}
-	h5 {font-size: calc(var(--title-size) * 5/9 * 2/4);}
-	h6 {font-size: calc(var(--title-size) * 4/9 * 2/4);}
-	h2.tagline {font-size: calc(var(--body-size) * 3/2 * 2/4);}
-
-	.small h1, h1.small {font-size: calc(var(--title-size))}
-	.small h2, h2.small {font-size: calc(var(--title-size) * 8/9 * 2/4)}
-	.small h3, h3.small {font-size: calc(var(--title-size) * 7/9 * 2/4)}
-	.small h4, h4.small {font-size: calc(var(--title-size) * 6/9 * 2/4)}
-	.small h5, h5.small {font-size: calc(var(--title-size) * 5/9 * 2/4)}
-	.small h6, h6.small {font-size: calc(var(--title-size) * 4/9 * 2/4)}
-	.small h2.tagline, h2.tagline.small {font-size: calc(var(--body-size) * 3/2 * 2/4);}
-
-	.large h1, h1.large {font-size: calc(var(--title-size) * 3/4)}
-	.large h2, h2.large {font-size: calc(var(--title-size) * 8/9 * 3/4)}
-	.large h3, h3.large {font-size: calc(var(--title-size) * 7/9 * 3/4)}
-	.large h4, h4.large {font-size: calc(var(--title-size) * 6/9 * 3/4)}
-	.large h5, h5.large {font-size: calc(var(--title-size) * 5/9 * 3/4)}
-	.large h6, h6.large {font-size: calc(var(--title-size) * 4/9 * 3/4)}
-	.large h2.tagline, h2.tagline.large {font-size: calc(var(--body-size) * 3/2 * 3/4);}
-	
-	p {font-size: calc(var(--body-size) * 3/4 * 3/4);}
-	.small p, p.small {font-size: calc(var(--body-size) * 2 /4);}
-	.large p, p.large {font-size: var(--body-size);}
-	
-	p .dropcap {
-		font-size: calc(var(--body-size) * 4 * 3/4);
-		line-height: calc(var(--body-size) * 3 * 3/4);
-		padding-top: calc(var(--body-size) * 1/2 * 3/4);
-		padding-right: calc(var(--body-size) * 1/2 * 3/4);
-		padding-left: calc(var(--body-size) * 1/3 * 3/4);
-	}
-	.small p .dropcap, p.small .dropcap {
-		font-size: calc(var(--body-size) * 4 * 3/4);
-		line-height: calc(var(--body-size) * 3 * 3/4);
-		padding-top: calc(var(--body-size) * 1/2 * 3/4);
-		padding-right: calc(var(--body-size) * 1/2 * 3/4);
-		padding-left: calc(var(--body-size) * 1/3 * 3/4);
-	}
-	.large p .dropcap, p.large .dropcap {
-		font-size: calc(var(--body-size) * 4 * 3/4);
-		line-height: calc(var(--body-size) * 3 * 3/4);
-		padding-top: calc(var(--body-size) * 1/2 * 3/4);
-		padding-right: calc(var(--body-size) * 1/2 * 3/4);
-		padding-left: calc(var(--body-size) * 1/3 * 3/4);
-	}
-
-	.fa-icon i.fa, i.fa.fa-icon, .fa-icon i.fab, i.fab.fa-icon, .fa-icon i.far, i.far.fa-icon, .fa-icon i.fa-regular, i.fa-regular.fa-icon, .fa-icon i.fas, i.fas.fa-icon, .fa-icon i.fa-solid, i.fa-solid.fa-icon {
-		font-size: calc(var(--body-size) * 3 * 2/4);
+	:root {
+		--title-size: calc(var(--title-size-raw) * 2/4);
 	}
 }
 
@@ -639,20 +556,20 @@ html:is([data-scroll='0']) .top-element-theme-inverted *, html:is([data-scroll='
 a.button {
 	font-family: var(--title-font);
 	font-weight: var(--title-weight);
-	font-size: calc(var(--body-size) * 4/4);
+	font-size: calc(var(--body-size));
 	color: var(--background-color);
-	padding: calc(var(--body-size) * 1/2 * 4/4);
+	padding: calc(var(--body-size) * 1/2);
 	margin-right: 8px;
 	text-transform: uppercase;
 	text-align: center;
 	text-decoration: none;
-	border: calc(var(--body-size) * 1/8 * 4/4) solid var(--body-color);
+	border: calc(var(--body-size) * 1/8) solid var(--body-color);
 	background-color: var(--body-color);
 	display: inline-block;
 	line-height: 1;
 }
 a.button * {
-	font-size: calc(var(--body-size) * 4/4);
+	font-size: calc(var(--body-size));
 	color: var(--background-color);
 	line-height: 1;
 }
@@ -660,6 +577,7 @@ a.button * {
 a.button:hover {
 	background-color: transparent;
 	color: var(--body-color);
+	opacity: 1;
 }
 a.button:hover * {
 	color: var(--body-color);
@@ -716,69 +634,15 @@ header a.button {
 	margin: -12px 0;
 }
 
-/* 4.1: Small Screens */
-@media only screen and (max-width: 54em) {
-	a.button {
-		font-size: calc(var(--body-size) * 3/4);
-		padding: calc(var(--body-size) * 1/2 * 3/4);
-		border: calc(var(--body-size) * 1/8 * 3/4) solid var(--color-black);
-	}
-	a.button * {
-		font-size: calc(var(--body-size) * 3/4);
-	}
-	.large a.button, a.button.large {
-		font-size: calc(var(--body-size) * 4/4);
-		padding: calc(var(--body-size) * 1/2 * 4/4);
-		border-width: calc(var(--body-size) * 1/8 * 4/4);
-	}
-	.large a.button *, a.button.large * {
-		font-size: calc(var(--body-size) * 4/4);
-	}
-
-	.small a.button, a.button.small {
-		font-size: calc(var(--body-size) * 3/4);
-		padding: calc(var(--body-size) * 1/2 * 3/4);
-		border-width: calc(var(--body-size) * 1/8 * 3/4);
-	}
-	.small a.button *, a.button.small * {
-		font-size: calc(var(--body-size) * 3/4);
-	}
-}
-
-@media only screen and (max-width: 35rem) {
-	a.button {
-		font-size: calc(var(--body-size) * 2/4);
-		padding: calc(var(--body-size) * 1/2 * 2/4);
-		border: calc(var(--body-size) * 1/8 * 2/4) solid var(--color-black);
-	}
-	a.button * {
-		font-size: calc(var(--body-size) * 42/4);
-	}
-	.large a.button, a.button.large {
-		font-size: calc(var(--body-size) * 3/4);
-		padding: calc(var(--body-size) * 1/2 * 3/4);
-		border-width: calc(var(--body-size) * 1/8 * 3/4);
-	}
-	.large a.button *, a.button.large * {
-		font-size: calc(var(--body-size) * 3/4);
-	}
-
-	.small a.button, a.button.small {
-		font-size: calc(var(--body-size) * 2/4);
-		padding: calc(var(--body-size) * 1/2 * 2/4);
-		border-width: calc(var(--body-size) * 1/8 * 2/4);
-	}
-	.small a.button *, a.button.small * {
-		font-size: calc(var(--body-size) * 2/4);
-	}
-}
-
 /*	==============================================
 	5: Code
 	============================================== */
 
-code, pre, .code, {
+code, pre, .code {
 	font-family: var(--monospace-font);
+}
+
+pre {
 	background-color: #d0d0d0;
 }
 
@@ -799,7 +663,7 @@ header {
 
 header, header *, header a.button {
 	font-family: var(--body-font);
-	font-size: calc(var(--body-font) * 4/4);
+	font-size: calc(var(--body-font));
 }
 
 header.sticky {
@@ -831,27 +695,13 @@ header ul li {
 /* 6.1: Header Colors */
 
 header.sticky {
-	border-bottom: 2px solid var(--color-black);
-	border-color: var(--body-color);
+	border-bottom: 2px solid var(--body-color);
 }
 
 /* 6.2: Sticky headers */
 html:is([data-scroll='0']) header.sticky {
 	background-color: transparent;
 	border: none;
-}
-
-/* 6.4: Small Screens */
-@media only screen and (max-width: 54em) {
-	header li, header a.button {
-		font-size: calc(var(--body-font) * 3/4);
-	}
-}
-
-@media only screen and (max-width: 35rem) {
-	header li, header a.button {
-		font-size: calc(var(--body-font) * 2/4);
-	}
 }
 
 /*	==============================================
@@ -867,31 +717,13 @@ footer.section-edgless {
 	padding: 0;
 }
 
-footer h1 {font-size: calc(var(--title-size) * 3/4 * 9/9 * 4/4);}
-footer h2 {font-size: calc(var(--title-size) * 3/4 * 8/9 * 4/4);}
-footer h3 {font-size: calc(var(--title-size) * 3/4 * 7/9 * 4/4);}
-footer h4 {font-size: calc(var(--title-size) * 3/4 * 6/9 * 4/4);}
-footer h5 {font-size: calc(var(--title-size) * 3/4 * 5/9 * 4/4);}
-footer h6 {font-size: calc(var(--title-size) * 3/4 * 4/9 * 4/4);}
+footer h1 {font-size: calc(var(--title-size) * 3/4 * 9/9);}
+footer h2 {font-size: calc(var(--title-size) * 3/4 * 8/9);}
+footer h3 {font-size: calc(var(--title-size) * 3/4 * 7/9);}
+footer h4 {font-size: calc(var(--title-size) * 3/4 * 6/9);}
+footer h5 {font-size: calc(var(--title-size) * 3/4 * 5/9);}
+footer h6 {font-size: calc(var(--title-size) * 3/4 * 4/9);}
 
-/* 7.1: Small Screens */
-@media only screen and (max-width: 54em) {
-	footer h1 {font-size: calc(var(--title-size) * 3/4 * 9/9 * 3/4);}
-	footer h2 {font-size: calc(var(--title-size) * 3/4 * 8/9 * 3/4);}
-	footer h3 {font-size: calc(var(--title-size) * 3/4 * 7/9 * 3/4);}
-	footer h4 {font-size: calc(var(--title-size) * 3/4 * 6/9 * 3/4);}
-	footer h5 {font-size: calc(var(--title-size) * 3/4 * 5/9 * 3/4);}
-	footer h6 {font-size: calc(var(--title-size) * 3/4 * 4/9 * 3/4);}
-}
-
-@media only screen and (max-width: 35rem) {
-	footer h1 {font-size: calc(var(--title-size) * 3/4 * 9/9 * 2/4);}
-	footer h2 {font-size: calc(var(--title-size) * 3/4 * 8/9 * 2/4);}
-	footer h3 {font-size: calc(var(--title-size) * 3/4 * 7/9 * 2/4);}
-	footer h4 {font-size: calc(var(--title-size) * 3/4 * 6/9 * 2/4);}
-	footer h5 {font-size: calc(var(--title-size) * 3/4 * 5/9 * 2/4);}
-	footer h6 {font-size: calc(var(--title-size) * 3/4 * 4/9 * 2/4);}
-}
 
 /*	==============================================
 	8: Table
