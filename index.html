@@ -49,10 +49,10 @@
 		<section class="section-light" id="about">
 			<div class="container-large">
 				<div class="row grid">
-					<div class="six">
+					<div class="col-six">
 						<img src="profile-picture.jpg" style="width:100%">
 					</div>
-					<div class="six">
+					<div class="col-six">
 						<h1>About Me</h1>
 						<p>I've always been interested in computers since I was really young. I've always been amazed at how I could do pretty much everything with them. Ever since I've developed tons of skils and strong opinions on technology.</p>
 						<p>More specifically, I like how computers and networking has allowed for more or less anyone in the world to communicate with anyone else instantly (AKA the Internet). However, I do not like its bad uses such as targeted ads, scams, and the spread of extremism.</p>
@@ -73,7 +73,7 @@
 		</section>
 		
 		<!-- Projects -->
-		<section class="section-dark" id="projects">
+		<section class="section-light" id="projects">
 			<div class="container-large">
 				<div class="row">
 					<h1>Projects</h1>
@@ -81,19 +81,25 @@
 			</div>
 			<div class="container-fluid">
 				<div class="row grid portfolio text-center">
-					<div class="three section-light">
+					<div class="col-three section-dark">
+						<a href="https://mable.benstokman.me">
+							<img src="images/projects/mable.png" alt="">
+							<h2 class="tagline">Mable</h2>
+						</a>
+					</div>
+					<div class="col-three section-dark">
 						<a href="keycaps/saturn-60">
 							<img src="images/projects/saturn-60.png" alt="">
 							<h2 class="tagline">Saturn 60 keycaps</h2>
 						</a>
 					</div>
-					<div class="three section-light">
+					<div class="col-three section-dark">
 						<a href="https://github.com/benjistokman/typora-theme">
 							<img src="images/projects/typora.png" alt="">
 							<h2 class="tagline">Typora Theme</h2>
 						</a>
 					</div>
-					<div class="three section-light">
+					<div class="col-three section-dark">
 						<a href="album-covers">
 							<img src="images/projects/album-covers.png" alt="">
 							<h2 class="tagline">Album Covers</h2>
@@ -104,7 +110,7 @@
 		</section>
 		
 		<!-- Posts -->
-		<section class="section-light" id="posts">
+		<section class="section-dark" id="posts">
 			<div class="container-large">
 				<div class="row">
 					<h1>Posts</h1>
@@ -112,7 +118,7 @@
 			</div>
 			<div class="container-large">
 				<div class="row grid portfolio">
-					<div class="four">
+					<div class="col-four">
 						<a href="https://blog.onetwentyeight.co/fall-guys-can-and-should-be-better-47eda6622ff5">
 							<img src="blog/fall-guys-can-and-should-be-better-47eda6622ff5.jpg" alt="">
 							<p class="code">blog.onetwentyeight.co</p>
@@ -120,7 +126,7 @@
 							<p>9 Aug 2020</p>
 						</a>
 					</div>
-					<div class="four">
+					<div class="col-four">
 						<a href="https://blog.onetwentyeight.co/whatever-stadia-is-going-for-d012a9116635">
 							<img src="blog/whatever-stadia-is-going-for-d012a9116635.jpg" alt="">
 							<p class="code">blog.onetwentyeight.co</p>
@@ -128,7 +134,7 @@
 							<p>20 Feb 2020</p>
 						</a>
 					</div>
-					<div class="four">
+					<div class="col-four">
 						<a href="https://hackernoon.com/the-real-iss-jd702gek">
 							<img src="blog/the-real-iss-jd702gek.jpg" alt="">
 							<p class="code">hackernoon.com</p>
@@ -136,6 +142,11 @@
 							<p>15 Dec 2019</p>
 						</a>
 					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row text-center">
+					<a href="blog" class="button large">View All</a>
 				</div>
 			</div>
 		</section>
@@ -172,7 +183,7 @@
 			const header = trianglify({
 				width: 400,
 				height: 400,
-				xColors: ["#E5404A", "#FC4651", "#FD603E", "#FE7A2A"],
+				xColors: ["#F5404A", "#FC4651", "#FD603E", "#FE7A2A"],
 				colorFunction: trianglify.colorFunctions.interpolateLinear(0.2),
 			})
 			document.getElementById('hidden').appendChild(header.toSVG())
@@ -185,7 +196,7 @@
 			const privacy = trianglify({
 				width: 400,
 				height: 400,
-				xColors: ["#080808", "#181820"],
+				xColors: ["#080808", "#282828"],
 				colorFunction: trianglify.colorFunctions.interpolateLinear(0.2),
 			})
 			document.getElementById('hidden').appendChild(privacy.toSVG())

@@ -5,7 +5,7 @@
 @import url('../../fonts/share-tech-mono.css');
 
  :root {
-	--color-theme: #fc4651;
+	--theme-color: #fc4651;
 	--title-font: "Odibee Sans", sans-serif;
 	--title-weight: 700;
 	--body-font: "Montserrat", sans-serif;
