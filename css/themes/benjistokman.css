@@ -1,8 +1,8 @@
 /* Benjistokman CSS Theme for Mable Template */
 
-@import url('../../fonts/odibee-sans.css');
-@import url('../../fonts/montserrat.css');
-@import url('../../fonts/share-tech-mono.css');
+@import url('https://fonts.benstokman.me/odibee-sans.css');
+@import url('https://fonts.benstokman.me/montserrat.css');
+@import url('https://fonts.benstokman.me/share-tech-mono.css');
 
  :root {
 	--theme-color: #fc4651;
@@ -31,4 +31,8 @@ header.sticky {
 	header li, header a.button {
 		font-size: 12px;
 	}
+}
+
+button, a.button, input[type=submit] {
+	padding-bottom: calc(var(--body-size) * 3/10);
 }
