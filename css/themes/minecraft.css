@@ -7,3 +7,7 @@
 	--title-font: "Minecraft", sans-serif;
 	--title-weight: 400;
 }
+
+button, a.button, input[type=submit] {
+	--item-scale: 1;
+}

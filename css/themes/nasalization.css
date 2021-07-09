@@ -7,3 +7,7 @@
 	--title-font: "Nasalization", sans-serif;
 	--title-weight: 700;
 }
+
+button, a.button, input[type=submit] {
+	--item-scale: 1;
+}
