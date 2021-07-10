@@ -1,6 +1,6 @@
 @import url("benjistokman.css");
 
-@import url("../../fonts/nasalization.css");
+@import url("nasalization/nasalization.css");
 
  :root {
 	--theme-color: #85245d;

@@ -1,6 +1,6 @@
 @import url("benjistokman.css");
 
-@import url("../../fonts/minecraft.css");
+@import url("minecraft/minecraft.css");
 
  :root {
 	--theme-color: #558a2c;
