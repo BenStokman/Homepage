@@ -10,7 +10,7 @@ This site is also available at [fonts.benstokman.me](https://fonts.benstokman.me
 
 [Download Font](https://fabiandesmet.com/portfolio/butler-Font/)
 
-```
+```css
 @import url('https://benstokman.me/fonts/butler.css');
 ```
 
@@ -18,7 +18,7 @@ This site is also available at [fonts.benstokman.me](https://fonts.benstokman.me
 
 [Download Font](https://fabiandesmet.com/portfolio/butler-Font/)
 
-```
+```css
 @import url('https://benstokman.me/fonts/butler-stencil.css');
 ```
 
@@ -26,13 +26,13 @@ This site is also available at [fonts.benstokman.me](https://fonts.benstokman.me
 
 [Download Font](https://fonts.google.com/specimen/Crimson+Pro)
 
-```
+```css
 @import url('https://benstokman.me/fonts/crimson-pro.css');
 ```
 
 ## Georgia
 
-```
+```css
 @import url('https://benstokman.me/fonts/georgia.css');
 ```
 
@@ -42,7 +42,7 @@ This site is also available at [fonts.benstokman.me](https://fonts.benstokman.me
 
 [Download Font](https://manropeFont.com/)
 
-```
+```css
 @import url('https://benstokman.me/fonts/manrope.css');
 ```
 
@@ -50,7 +50,7 @@ This site is also available at [fonts.benstokman.me](https://fonts.benstokman.me
 
 [Download Font](https://www.daFont.com/minecraft.Font)
 
-```
+```css
 @import url('https://benstokman.me/fonts/minecraft.css');
 ```
 
@@ -60,7 +60,7 @@ This site is also available at [fonts.benstokman.me](https://fonts.benstokman.me
 
 [Download Font](https://Fonts.google.com/specimen/Montserrat)
 
-```
+```css
 @import url('https://benstokman.me/fonts/montserrat.css');
 ```
 
@@ -70,7 +70,7 @@ This site is also available at [fonts.benstokman.me](https://fonts.benstokman.me
 
 [Download Font](https://www.daFont.com/nasalization.Font)
 
-```
+```css
 @import url('https://benstokman.me/fonts/nasalization.css');
 ```
 
@@ -80,7 +80,7 @@ This site is also available at [fonts.benstokman.me](https://fonts.benstokman.me
 
 [Download Font](http://odibeesans.com/)
 
-```
+```css
 @import url('https://benstokman.me/fonts/odibee-sans.css');
 ```
 
@@ -88,7 +88,7 @@ This site is also available at [fonts.benstokman.me](https://fonts.benstokman.me
 
 [Download Font](https://www.dafont.com/peace-sans.font)
 
-```
+```css
 @import url('https://benstokman.me/fonts/peace-sans.css');
 ```
 
@@ -96,7 +96,7 @@ This site is also available at [fonts.benstokman.me](https://fonts.benstokman.me
 
 [Download Font](https://fonts.google.com/specimen/Poppins)
 
-```
+```css
 @import url('https://benstokman.me/fonts/poppins.css')
 ```
 
@@ -108,7 +108,7 @@ Free for noncommercial use only. See download link for more
 
 [Download Font](https://www.daFont.com/robot-radicals.Font)
 
-```
+```css
 @import url('https://benstokman.me/fonts/robot-radicals.css')
 ```
 
@@ -118,7 +118,14 @@ Free for noncommercial use only. See download link for more
 
 [Download Font](https://fonts.google.com/specimen/Share+Tech+Mono)
 
-```
+```css
 @import url('https://benstokman.me/fonts/share-tech-mono.css');
 ```
 
+## Zen Tokyo Zoo
+
+[Download Font](https://fonts.google.com/specimen/Zen+Tokyo+Zoo)
+
+```css
+@import url('https://benstokman.me/fonts/zen-tokyo-zoo.css');
+```
